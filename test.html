@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="id"></div>
+  </body>
+  <script>
+    window.onerror = function (msg, url, lineNo, columnNo, error) {
+      // 处理错误信息
+      console.log(msg, url, lineNo, columnNo, error);
+    };
+    // 错误需要捕获才能捕捉到
+    window.addEventListener(
+      "error",
+      (event) => {
+        console.log(123, `${event.type}: ${event.message}`);
+      },
+      true
+    );
+  </script>
+  <script>
+    let script = document.createElement("script");
+    script.src = "./test.js";
+    // crossorigin="anonymous" —— 如果服务器的响应带有包含 * 或我们的源（origin）的 header Access-Control-Allow-Origin，则允许访问。浏览器不会将授权信息和 cookie 发送到远程服务器
+    // script.crossOrigin = "anonymous";
+    // 加载es6模块
+    // script.type = "module";
+    document.body.appendChild(script);
+    script.onload = function (e) {
+      console.log("加载了资源", e, this);
+      console.dir(this);
+    };
+    script.onerror = function (e) {
+      console.log("资源加载错误", e, this);
+      console.dir(this);
+    };
+  </script>
+  <noscript>
+    <p>当前浏览器已禁用javascript</p>
+  </noscript>
+</html>
