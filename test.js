@@ -1,3 +1,13 @@
-console.log(typeof null);
-console.log(Number.MAX_VALUE);
-console.log(Number.MIN_VALUE);
+// console.log(typeof null);
+// console.log(Number.MAX_VALUE);
+// console.log(Number.MIN_VALUE);
+// console.log(parseInt(100, 16));
+// console.log(String(null), String(undefined));
+// var obj = { a: 1 };
+// var obj2 = {};
+// obj2[obj] = 1;
+// console.log(obj2);
+// obj2.obj = 1;
+// console.log(obj2);
+console.log(Object(1));
+console.log(Object(Symbol(1)));
