@@ -9,7 +9,6 @@ function createNew() {
   const constr = Array.prototype.shift.call(arguments);
   if (typeof constr !== "function") {
     throw Error("constr must be an constructor");
-    return;
   }
   // 构造空对象，将对象的隐式原型指向构造函数的显式原型
   // var obj = Object.create({});
