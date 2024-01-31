@@ -22,8 +22,9 @@ const throttle = (fn, delay = 500) => {
 const test = function (p) {
   console.log(p);
 };
-const debounceFn = throttle(test, 1000);
+const debounceFn = throttle(test, 500);
 debounceFn(1);
 debounceFn(2);
 debounceFn(3);
+setTimeout(() => debounceFn(666), 501);
 //====== 测试区域结束 ======
