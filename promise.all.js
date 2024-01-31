@@ -6,6 +6,7 @@
  * @returns: {Array<any>}
  */
 const all = function (list) {
+  if (!Array.isArray(list)) throw Error("param must be an array");
   const result = [];
   let flag = 0;
   return new Promise((resolve, reject) => {
@@ -54,4 +55,6 @@ let p3 = new Promise(function (resolve, reject) {
 all([p1, p2, p3, 666]).then((res) => {
   console.log(res); // [3, 1, 2]
 });
+const res = all([p1, p2, p3, 666]);
+console.log(res);
 //====== 测试区域结束 ======
