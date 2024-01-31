@@ -42,49 +42,48 @@ const promise = function (fn) {
     });
   }
 
-  this.then = function (resolveFn, rejectFn) {
-    return new promise(function (resolve, reject) {
-      resolveFn =
-        typeof resolveFn === "function"
-          ? resolveFn
-          : function (val) {
-              return val;
-            };
+  //   function then(resolveFn, rejectFn) {
+  //     return new promise(function (resolve, reject) {
+  //       resolveFn =
+  //         typeof resolveFn === "function"
+  //           ? resolveFn
+  //           : function (val) {
+  //               return val;
+  //             };
 
-      rejectFn =
-        typeof rejectFn === "function"
-          ? rejectFn
-          : function (val) {
-              return val;
-            };
-      if (_self.status === "pending") {
-        _self.resolveCallbacks.push(resolveFn);
-        _self.rejectCallbacks.push(rejectFn);
-      }
+  //       rejectFn =
+  //         typeof rejectFn === "function"
+  //           ? rejectFn
+  //           : function (val) {
+  //               return val;
+  //             };
+  //       if (_self.status === "pending") {
+  //         _self.resolveCallbacks.push(resolveFn);
+  //         _self.rejectCallbacks.push(rejectFn);
+  //       }
+  //       if (_self.status === "resolved") {
+  //         try {
+  //           const result = resolveFn(_self.result);
+  //           return result instanceof promise
+  //             ? result.then(resolve, reject)
+  //             : resolve(result);
+  //         } catch (error) {
+  //           reject(error);
+  //         }
+  //       }
 
-      if (_self.status === "resolved") {
-        try {
-          const result = resolveFn(_self.result);
-          return result instanceof promise
-            ? result.then(resolve, reject)
-            : resolve(result);
-        } catch (error) {
-          reject(error);
-        }
-      }
-
-      if (_self.status === "rejected") {
-        try {
-          const result = rejectFn(_self.result);
-          return result instanceof promise
-            ? result.then(resolve, reject)
-            : resolve(result);
-        } catch (error) {
-          reject(error);
-        }
-      }
-    });
-  };
+  //       if (_self.status === "rejected") {
+  //         try {
+  //           const result = rejectFn(_self.result);
+  //           return result instanceof promise
+  //             ? result.then(resolve, reject)
+  //             : resolve(result);
+  //         } catch (error) {
+  //           reject(error);
+  //         }
+  //       }
+  //     });
+  //   }
 
   try {
     fn(resolve.bind(this), reject.bind(this));
@@ -100,6 +99,50 @@ promise.resolve = function (val) {
 promise.reject = function (err) {
   return new promise((_, reject) => {
     reject(err);
+  });
+};
+promise.prototype.then = function (resolveFn, rejectFn) {
+  var self = this;
+  return new promise(function (resolve, reject) {
+    resolveFn =
+      typeof resolveFn === "function"
+        ? resolveFn
+        : function (val) {
+            return val;
+          };
+
+    rejectFn =
+      typeof rejectFn === "function"
+        ? rejectFn
+        : function (val) {
+            return val;
+          };
+    if (self.status === "pending") {
+      self.resolveCallbacks.push(resolveFn);
+      self.rejectCallbacks.push(rejectFn);
+      console.log(self.resolveCallbacks);
+    }
+    if (self.status === "resolved") {
+      try {
+        const result = resolveFn(self.result);
+        return result instanceof promise
+          ? result.then(resolve, reject)
+          : resolve(result);
+      } catch (error) {
+        reject(error);
+      }
+    }
+
+    if (self.status === "rejected") {
+      try {
+        const result = rejectFn(self.result);
+        return result instanceof promise
+          ? result.then(resolve, reject)
+          : resolve(result);
+      } catch (error) {
+        reject(error);
+      }
+    }
   });
 };
 //====== 测试区域开始 ======
