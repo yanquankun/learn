@@ -13,3 +13,4 @@ Object.create [Object.create.js](./source/Object.create.js) <font color=red>未�
 promise [promise.js](./source/promise.js) <font color=green>已完成</font>  
 promise.all [promise.all.js](./source/promise.all.js) <font color=green>已完成</font>  
 promise.race [promise.race.js](./source/promise.race.js) <font color=green>已完成</font>  
+debounce [debounce.js](./source/debounce.js) <font color=green>已完成</font>  
