@@ -7,6 +7,12 @@
  * @returns: any
  */
 const curry = (fn, ...args) => {
+  // 函数柯里化实现是通过判断多次调用后的参数length是否大于等于原函数的length
+  // 再通过bind的延迟加载的特性以及合并参数的特性实现缓存参数
+  /**
+   * bind实现可参考如下地址：
+   * {@link https://github.com/yanquankun/learn/blob/master/source/bind.js GitHub}.
+   */
   return args.length < fn.length
     ? curry.bind(null, fn, ...args)
     : fn(...args.slice(0, fn.length));
