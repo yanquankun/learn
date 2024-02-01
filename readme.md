@@ -16,3 +16,4 @@ promise.race [promise.race.js](./source/promise.race.js) <font color=green>已�
 debounce [debounce.js](./source/debounce.js) <font color=green>已完成</font>  
 throttle [throttle.js](./source/throttle.js) <font color=green>已完成</font>  
 call [call.js](./source/call.js) <font color=green>已完成</font>  
+apply [apply.js](./source/apply.js) <font color=green>已完成</font>  
