@@ -18,3 +18,4 @@ throttle [throttle.js](./source/throttle.js) <font color=green>已完成</font>
 call [call.js](./source/call.js) <font color=green>已完成</font>  
 apply [apply.js](./source/apply.js) <font color=green>已完成</font>  
 bind [bind.js](./source/bind.js) <font color=green>已完成</font>  
+curry [curry.js](./source/curry.js) <font color=green>已完成</font>  
