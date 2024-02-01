@@ -26,4 +26,5 @@ test._call(null, 1);
 test._call({ a: 1 }, 1);
 test._call(1, 1);
 test._call("", 1);
+test._call("");
 //====== 测试区域结束 ======

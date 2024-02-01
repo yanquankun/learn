@@ -13,7 +13,8 @@ Function.prototype._apply = function () {
     context === null || context === undefined ? globalThis : Object(context);
   const symbol = Symbol("fn");
   context[symbol] = this;
-  result = context[symbol](arguments);
+  // apply需要判断是否入参
+  result = arguments.length ? context[symbol](arguments) : context[symbol]();
   delete context[symbol];
   return result;
 };
@@ -26,4 +27,5 @@ test._apply(null, [1]);
 test._apply({ a: 1 }, [1]);
 test._apply(1, [1]);
 test._apply("", [1]);
+test._apply("");
 //====== 测试区域结束 ======
