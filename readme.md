@@ -22,3 +22,4 @@ curry [curry.js](./source/curry.js) <font color=green>已完成</font>
 deepClone [deepClone.js](./source/deepClone.js) <font color=green>已完成</font>  
 flat [flat.js](./source/flat.js) <font color=green>已完成</font>  
 dataToTree [dataToTree.js](./source/dataToTree.js) <font color=green>已完成</font>  
+红绿灯 [红绿灯.js](./algorithm/红绿灯.js) <font color=green>已完成</font>  
