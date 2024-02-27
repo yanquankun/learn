@@ -25,3 +25,5 @@ dataToTree [dataToTree.js](./source/dataToTree.js) <font color=green>已完成</
 红绿灯 [红绿灯.js](./algorithm/红绿灯.js) <font color=green>已完成</font>  
 链表反转 [链表反转.js](./algorithm/链表反转.js) <font color=green>已完成</font>  
 二叉树遍历 [二叉树遍历.js](./algorithm/二叉树遍历.js) <font color=green>已完成</font>  
+广度优先遍历 [广度优先遍历.js](./algorithm/广度优先遍历.js) <font color=green>已完成</font>  
+深度优先遍历 [深度优先遍历.js](./algorithm/深度优先遍历.js) <font color=green>已完成</font>  
