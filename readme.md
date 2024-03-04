@@ -30,3 +30,4 @@ dataToTree [dataToTree.js](./source/dataToTree.js) <font color=green>已完成</
 快速排序 [快速排序.js](./algorithm/快速排序.js) <font color=green>已完成</font>  
 链表有环 [链表有环.js](./algorithm/链表有环.js) <font color=green>已完成</font>  
 LRU [LRU.js](./source/LRU.js) <font color=green>已完成</font>  
+字符的最短距离 [字符的最短距离.js](./algorithm/字符的最短距离.js) <font color=green>已完成</font>  
