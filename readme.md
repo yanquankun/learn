@@ -29,3 +29,4 @@ dataToTree [dataToTree.js](./source/dataToTree.js) <font color=green>已完成</
 深度优先遍历 [深度优先遍历.js](./algorithm/深度优先遍历.js) <font color=green>已完成</font>  
 快速排序 [快速排序.js](./algorithm/快速排序.js) <font color=green>已完成</font>  
 链表有环 [链表有环.js](./algorithm/链表有环.js) <font color=green>已完成</font>  
+LRU [LRU.js](./source/LRU.js) <font color=green>已完成</font>  
