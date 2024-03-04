@@ -1,6 +1,7 @@
 **Author**：闫全堃[Mint]  
 **GitHub**：[GitHub](https://github.com/yanquankun/learn)  
-**Desc**：目前用于手写各种 js 功能源码，有错误地址或更好解法欢迎大家可以提[pr](https://github.com/yanquankun/learn/pulls)  
+**Desc**：前端学习仓库，俗话说好记性不如烂笔头 😄，创建这个仓库主要为了手写各种源码以及算法题，将自己做过的记录下来，防止忘记，有错误或更好解法欢迎大家可以提[pr](https://github.com/yanquankun/learn/pulls)  
+**我们的口号**：做对的事，而不是容易的事 ✌🏻，代码洁癖【不是实现了就 ok 了，还要考虑细节处理才是】  
 
 ---
 
@@ -31,3 +32,4 @@ dataToTree [dataToTree.js](./source/dataToTree.js) <font color=green>已完成</
 链表有环 [链表有环.js](./algorithm/链表有环.js) <font color=green>已完成</font>  
 LRU [LRU.js](./source/LRU.js) <font color=green>已完成</font>  
 字符的最短距离 [字符的最短距离.js](./algorithm/字符的最短距离.js) <font color=green>已完成</font>  
+二叉树逐层遍历 [二叉树逐层遍历.js](./algorithm/二叉树逐层遍历.js) <font color=green>未完成</font>
