@@ -32,4 +32,5 @@ dataToTree [dataToTree.js](./source/dataToTree.js) <font color=green>已完成</
 链表有环 [链表有环.js](./algorithm/链表有环.js) <font color=green>已完成</font>  
 LRU [LRU.js](./source/LRU.js) <font color=green>已完成</font>  
 字符的最短距离 [字符的最短距离.js](./algorithm/字符的最短距离.js) <font color=green>已完成</font>  
-二叉树逐层遍历 [二叉树逐层遍历.js](./algorithm/二叉树逐层遍历.js) <font color=green>未完成，解法存在问题</font>
+二叉树逐层遍历 [二叉树逐层遍历.js](./algorithm/二叉树逐层遍历.js) <font color=green>未完成，解法存在问题</font>  
+回文字符串 [回文字符串.js](./algorithm/回文字符串.js) <font color=green>已完成</font>  
