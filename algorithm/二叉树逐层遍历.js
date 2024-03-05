@@ -12,7 +12,23 @@
  * @return {number[][]}
  */
 var levelOrder = function (root) {
-    
+  if (!root) return [];
+  const res = [[root.val]];
+  const save = [];
+  root.left && save.push(root.left.val);
+  root.right && save.push(root.right.val);
+  save.length && res.push(save);
+  if (root.left) {
+    const left = levelOrder(root.left);
+    left.shift();
+    left.length && res.push(...left);
+  }
+  if (root.right) {
+    const right = levelOrder(root.right);
+    right.shift();
+    right.length && res.push(...right);
+  }
+  return res;
 };
 //====== 测试区域开始 ======
 /**
