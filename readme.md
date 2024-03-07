@@ -45,4 +45,4 @@ LRU [LRU.js](./source/LRU.js) <font color=green>已完成</font>
 ***
 
 ### 编程技巧  
-并发数限制 [并发数限制.js](./codeSkill/并发数限制.js) <font color=green>未完成</font>  
+并发数限制 [并发数限制.js](./codeSkill/并发数限制.js) <font color=green>已完成</font>  
