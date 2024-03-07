@@ -10,7 +10,7 @@
 
 ***
 
-### <font color=red>**Source**：源码实现</font>  
+### 源码实现  
 instanceof [instanceof.js](./source/instanceof.js) <font color=green>已完成</font>  
 new [new.js](./source/new.js) <font color=green>已完成</font>  
 Object.create [Object.create.js](./source/Object.create.js) <font color=red>未完成，存在 bug</font>  
@@ -30,7 +30,7 @@ LRU [LRU.js](./source/LRU.js) <font color=green>已完成</font>
 
 ***
 
-### <font color=red>**algorithm**：算法</font>  
+### 算法  
 红绿灯 [红绿灯.js](./algorithm/红绿灯.js) <font color=green>已完成</font>  
 链表反转 [链表反转.js](./algorithm/链表反转.js) <font color=green>已完成</font>  
 二叉树遍历 [二叉树遍历.js](./algorithm/二叉树遍历.js) <font color=green>已完成</font>  
@@ -44,5 +44,5 @@ LRU [LRU.js](./source/LRU.js) <font color=green>已完成</font>
 
 ***
 
-### <font color=red>**codeSkill**：编程技巧</font>  
+### 编程技巧  
 并发数限制 [并发数限制.js](./codeSkill/并发数限制.js) <font color=green>未完成</font>  
