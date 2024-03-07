@@ -27,8 +27,8 @@ deepClone [deepClone.js](./source/deepClone.js) <font color=green>已完成</fon
 flat [flat.js](./source/flat.js) <font color=green>已完成</font>  
 dataToTree [dataToTree.js](./source/dataToTree.js) <font color=green>已完成</font>  
 LRU [LRU.js](./source/LRU.js) <font color=green>已完成</font>  
-promiseCatch [promiseCatch.js](./source/promiseCatch.js) <font color=green>已完成</font>  
-promseResolve [promseResolve.js](./source/promseResolve.js) <font color=green>已完成</font>  
+promise.catch [promise.catch.js](./source/promise.catch.js) <font color=green>已完成</font>  
+promse.resolve [promse.resolve.js](./source/promse.resolve.js) <font color=green>已完成</font>  
 
 ***
 
