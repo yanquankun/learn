@@ -43,8 +43,10 @@ promse.resolve [promse.resolve.js](./source/promse.resolve.js) <font color=green
 字符的最短距离 [字符的最短距离.js](./algorithm/字符的最短距离.js) <font color=green>已完成</font>  
 二叉树逐层遍历 [二叉树逐层遍历.js](./algorithm/二叉树逐层遍历.js) <font color=green>未完成，解法存在问题</font>  
 回文字符串 [回文字符串.js](./algorithm/回文字符串.js) <font color=green>已完成</font>  
+是否是素数 [是否是素数.js](./algorithm/是否是素数.js) <font color=green>已完成</font>  
+获取n以内的所有素数 [获取n以内的所有素数.js](./algorithm/获取n以内的所有素数.js) <font color=green>已完成</font>  
 
-***
+*** 
 
 ### 编程技巧  
 并发数限制 [并发数限制.js](./codeSkill/并发数限制.js) <font color=green>已完成</font>  
