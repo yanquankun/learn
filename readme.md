@@ -45,6 +45,7 @@ promse.resolve [promse.resolve.js](./source/promse.resolve.js) <font color=green
 回文字符串 [回文字符串.js](./algorithm/回文字符串.js) <font color=green>已完成</font>  
 是否是素数 [是否是素数.js](./algorithm/是否是素数.js) <font color=green>已完成</font>  
 获取n以内的所有素数 [获取n以内的所有素数.js](./algorithm/获取n以内的所有素数.js) <font color=green>已完成</font>  
+大数相加 [大数相加.js](./algorithm/大数相加.js) <font color=green>已完成</font>  
 
 *** 
 
