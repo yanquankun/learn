@@ -26,8 +26,8 @@ const getBigNumSum = (num1, num2) => {
     save = curSum >= 10 ? 1 : 0;
     res.unshift(curSum >= 10 ? curSum - 10 : curSum);
   }
-  return res.join("");
+  return (save ? 1 : "") + res.join("");
 };
 //====== 测试区域开始 ======
-console.log(getBigNumSum(111111111119, 2222222226));
+console.log(getBigNumSum(798912377132, 99999999999)); // 799012377131
 //====== 测试区域结束 ======
