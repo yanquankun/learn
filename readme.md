@@ -51,3 +51,4 @@ promse.resolve [promse.resolve.js](./source/promse.resolve.js) <font color=green
 
 ### 编程技巧  
 并发数限制 [并发数限制.js](./codeSkill/并发数限制.js) <font color=green>已完成</font>  
+错误重试 [错误重试.js](./codeSkill/错误重试.js) <font color=green>已完成</font>  
