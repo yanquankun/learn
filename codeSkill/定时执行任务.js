@@ -27,8 +27,13 @@ const settimer = function (delay = 100, callback) {
         callback();
         start = current;
       }
-      if (!stop) timer();
-      isRegister = false;
+      if (!stop) {
+        timer();
+      } else {
+        // 只有在stop停止后，才注销注册
+        // 否则会少执行一次
+        isRegister = false;
+      }
     }, delay);
   }
   timer.stop = function () {
@@ -45,5 +50,11 @@ const time = settimer(100, () => {
 time();
 setTimeout(() => {
   time.stop();
-}, 1000);
+}, 200);
+time();
+// 1710914536398
+// 1710914536510
+// 1710914536611
+// 1710914536712
+// 1710914536812
 //====== 测试区域结束 ======
