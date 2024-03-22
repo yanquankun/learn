@@ -46,6 +46,7 @@ promse.resolve [promse.resolve.js](./source/promse.resolve.js) <font color=green
 是否是素数 [是否是素数.js](./algorithm/是否是素数.js) <font color=green>已完成</font>  
 获取n以内的所有素数 [获取n以内的所有素数.js](./algorithm/获取n以内的所有素数.js) <font color=green>已完成</font>  
 大数相加 [大数相加.js](./algorithm/大数相加.js) <font color=green>已完成</font>  
+字符串出现的不重复最长长度 [字符串出现的不重复最长长度.js](./algorithm/字符串出现的不重复最长长度.js) <font color=green>已完成</font>  
 
 *** 
 
