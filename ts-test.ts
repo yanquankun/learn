@@ -39,3 +39,93 @@ console.log(testChild.b);
 console.log(testChild.d);
 console.dir(testChild);
 console.dir(Test2.a);
+
+/** 类型断言 */
+let num = <number>1;
+let num1 = 1 as number;
+let num2: number = 1;
+let num3: number = <number>1;
+
+/** type实现deepReadonly */
+type deepReadonly<T> = {
+  readonly [P in keyof T]: T[P] extends any ? deepReadonly<T[P]> : T[P];
+};
+// 对象只读
+const obj1: deepReadonly<{
+  name: string;
+  obj: {
+    age: number;
+  };
+}> = {
+  name: "yqk",
+  obj: {
+    age: 10,
+  },
+};
+obj1.name = "yqk2";
+obj1.obj.age = 20;
+// 数组只读
+const arr: readonly (number | { a: number })[] = [1, 2, 3, { a: 1 }];
+arr[3].a = 1;
+const arr2: deepReadonly<(number | { a: number })[]> = [1, 2, 3, { a: 1 }];
+arr2[3].a = 1;
+arr2[0] = 1;
+
+// 变量解构
+Object.defineProperty(Object, "Symbol.iterator", {
+  value: Object.values(this)[Symbol.iterator](),
+});
+const [a1, b1] = { a1: 1, b1: 2 };
+
+interface SearchFunc {
+  (source: string, subString: string): boolean;
+}
+let mySearch: SearchFunc;
+mySearch = function (src: string, sub: string): boolean {
+  let result = src.search(sub);
+  return result > -1;
+};
+
+class t {
+  aga: number = 12;
+  protected age: number = 12;
+
+  say() {
+    this.aga;
+    this.age;
+    t.say2();
+  }
+
+  static say2() {
+    const _this = new t();
+    console.log(_this.age);
+  }
+}
+const tt = new t();
+tt.say();
+tt.aga;
+
+type fnReturn = void | number | string;
+function fn(p: string): string;
+function fn(p: number): number;
+function fn(): void;
+function fn(p?): fnReturn {
+  if (p) return 1;
+}
+function fn2(p: string): string {
+  return p;
+}
+function fn3(p: Parameters<typeof fn2>[0]): ReturnType<typeof fn2> {
+  return p;
+}
+fn3("1");
+type ReturnType1<T extends (...args: any) => any> = T extends (
+  ...args: any
+) => infer R
+  ? R
+  : any;
+type Parameter<T extends (...args: any) => any> = T extends (
+  ...args: infer P
+) => any
+  ? P
+  : never;
