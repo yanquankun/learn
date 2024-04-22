@@ -46,10 +46,10 @@ let num1 = 1 as number;
 let num2: number = 1;
 let num3: number = <number>1;
 
-/** type实现deepReadonly */
-type deepReadonly<T> = {
-  readonly [P in keyof T]: T[P] extends any ? deepReadonly<T[P]> : T[P];
+export const util: Util = (p) => {
+  return Boolean(p);
 };
+
 // 对象只读
 const obj1: deepReadonly<{
   name: string;
@@ -119,13 +119,3 @@ function fn3(p: Parameters<typeof fn2>[0]): ReturnType<typeof fn2> {
   return p;
 }
 fn3("1");
-type ReturnType1<T extends (...args: any) => any> = T extends (
-  ...args: any
-) => infer R
-  ? R
-  : any;
-type Parameter<T extends (...args: any) => any> = T extends (
-  ...args: infer P
-) => any
-  ? P
-  : never;
