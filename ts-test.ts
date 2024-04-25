@@ -119,3 +119,18 @@ function fn3(p: Parameters<typeof fn2>[0]): ReturnType<typeof fn2> {
   return p;
 }
 fn3("1");
+
+function strEnum<T extends string>(o: Array<T>): { [K in T]: K } {
+  return o.reduce((res, key) => {
+    res[key] = key;
+    return res;
+  }, Object.create(null));
+}
+
+// 创建 K: V
+const Direction = strEnum(["North", "South", "East", "West"]);
+
+// 创建一个类型
+type Direction = keyof typeof Direction;
+// 简单的使用
+let sample: Direction = "East";
