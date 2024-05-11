@@ -11,48 +11,48 @@
 ***
 
 ### 源码实现  
-instanceof [instanceof.js](./source/instanceof.js) <font color=green>已完成</font>  
-new [new.js](./source/new.js) <font color=green>已完成</font>  
-Object.create [Object.create.js](./source/Object.create.js) <font color=red>未完成，存在 bug</font>  
-promise [promise.js](./source/promise.js) <font color=green>已完成</font>  
-promise.all [promise.all.js](./source/promise.all.js) <font color=green>已完成</font>  
-promise.race [promise.race.js](./source/promise.race.js) <font color=green>已完成</font>  
-debounce [debounce.js](./source/debounce.js) <font color=green>已完成</font>  
-throttle [throttle.js](./source/throttle.js) <font color=green>已完成</font>  
-call [call.js](./source/call.js) <font color=green>已完成</font>  
-apply [apply.js](./source/apply.js) <font color=green>已完成</font>  
-bind [bind.js](./source/bind.js) <font color=green>已完成</font>  
-curry [curry.js](./source/curry.js) <font color=green>已完成</font>  
-deepClone [deepClone.js](./source/deepClone.js) <font color=green>已完成</font>  
-flat [flat.js](./source/flat.js) <font color=green>已完成</font>  
-dataToTree [dataToTree.js](./source/dataToTree.js) <font color=green>已完成</font>  
-LRU [LRU.js](./source/LRU.js) <font color=green>已完成</font>  
-promise.catch [promise.catch.js](./source/promise.catch.js) <font color=green>已完成</font>  
-promse.resolve [promse.resolve.js](./source/promse.resolve.js) <font color=green>已完成</font>  
+instanceof [instanceof.js](./源码实现/instanceof.js) <font color=green>已完成</font>  
+new [new.js](./源码实现/new.js) <font color=green>已完成</font>  
+Object.create [Object.create.js](./源码实现/Object.create.js) <font color=red>未完成，存在 bug</font>  
+promise [promise.js](./源码实现/promise.js) <font color=green>已完成</font>  
+promise.all [promise.all.js](./源码实现/promise.all.js) <font color=green>已完成</font>  
+promise.race [promise.race.js](./源码实现/promise.race.js) <font color=green>已完成</font>  
+debounce [debounce.js](./源码实现/debounce.js) <font color=green>已完成</font>  
+throttle [throttle.js](./源码实现/throttle.js) <font color=green>已完成</font>  
+call [call.js](./源码实现/call.js) <font color=green>已完成</font>  
+apply [apply.js](./源码实现/apply.js) <font color=green>已完成</font>  
+bind [bind.js](./源码实现/bind.js) <font color=green>已完成</font>  
+curry [curry.js](./源码实现/curry.js) <font color=green>已完成</font>  
+deepClone [deepClone.js](./源码实现/deepClone.js) <font color=green>已完成</font>  
+flat [flat.js](./源码实现/flat.js) <font color=green>已完成</font>  
+dataToTree [dataToTree.js](./源码实现/dataToTree.js) <font color=green>已完成</font>  
+LRU [LRU.js](./源码实现/LRU.js) <font color=green>已完成</font>  
+promise.catch [promise.catch.js](./源码实现/promise.catch.js) <font color=green>已完成</font>  
+promse.resolve [promse.resolve.js](./源码实现/promse.resolve.js) <font color=green>已完成</font>  
 
 ***
 
 ### 算法  
-红绿灯 [红绿灯.js](./algorithm/红绿灯.js) <font color=green>已完成</font>  
-链表反转 [链表反转.js](./algorithm/链表反转.js) <font color=green>已完成</font>  
-二叉树遍历 [二叉树遍历.js](./algorithm/二叉树遍历.js) <font color=green>已完成</font>  
-广度优先遍历 [广度优先遍历.js](./algorithm/广度优先遍历.js) <font color=green>已完成</font>  
-深度优先遍历 [深度优先遍历.js](./algorithm/深度优先遍历.js) <font color=green>已完成</font>  
-快速排序 [快速排序.js](./algorithm/快速排序.js) <font color=green>已完成</font>  
-链表有环 [链表有环.js](./algorithm/链表有环.js) <font color=green>已完成</font>  
-字符的最短距离 [字符的最短距离.js](./algorithm/字符的最短距离.js) <font color=green>已完成</font>  
-二叉树逐层遍历 [二叉树逐层遍历.js](./algorithm/二叉树逐层遍历.js) <font color=green>未完成，解法存在问题</font>  
-回文字符串 [回文字符串.js](./algorithm/回文字符串.js) <font color=green>已完成</font>  
-是否是素数 [是否是素数.js](./algorithm/是否是素数.js) <font color=green>已完成</font>  
-获取n以内的所有素数 [获取n以内的所有素数.js](./algorithm/获取n以内的所有素数.js) <font color=green>已完成</font>  
-大数相加 [大数相加.js](./algorithm/大数相加.js) <font color=green>已完成</font>  
-字符串出现的不重复最长长度 [字符串出现的不重复最长长度.js](./algorithm/字符串出现的不重复最长长度.js) <font color=green>已完成</font>  
-返回数组大的前topK项 [返回数组大的前topK项.js](./algorithm/返回数组大的前topK项.js) <font color=green>已完成</font>  
-链表合并[链表合并.js](./algorithm/链表合并.js) <font color=green>已完成</font>  
+红绿灯 [红绿灯.js](./算法/红绿灯.js) <font color=green>已完成</font>  
+链表反转 [链表反转.js](./算法/链表反转.js) <font color=green>已完成</font>  
+二叉树遍历 [二叉树遍历.js](./算法/二叉树遍历.js) <font color=green>已完成</font>  
+广度优先遍历 [广度优先遍历.js](./算法/广度优先遍历.js) <font color=green>已完成</font>  
+深度优先遍历 [深度优先遍历.js](./算法/深度优先遍历.js) <font color=green>已完成</font>  
+快速排序 [快速排序.js](./算法/快速排序.js) <font color=green>已完成</font>  
+链表有环 [链表有环.js](./算法/链表有环.js) <font color=green>已完成</font>  
+字符的最短距离 [字符的最短距离.js](./算法/字符的最短距离.js) <font color=green>已完成</font>  
+二叉树逐层遍历 [二叉树逐层遍历.js](./算法/二叉树逐层遍历.js) <font color=green>未完成，解法存在问题</font>  
+回文字符串 [回文字符串.js](./算法/回文字符串.js) <font color=green>已完成</font>  
+是否是素数 [是否是素数.js](./算法/是否是素数.js) <font color=green>已完成</font>  
+获取n以内的所有素数 [获取n以内的所有素数.js](./算法/获取n以内的所有素数.js) <font color=green>已完成</font>  
+大数相加 [大数相加.js](./算法/大数相加.js) <font color=green>已完成</font>  
+字符串出现的不重复最长长度 [字符串出现的不重复最长长度.js](./算法/字符串出现的不重复最长长度.js) <font color=green>已完成</font>  
+返回数组大的前topK项 [返回数组大的前topK项.js](./算法/返回数组大的前topK项.js) <font color=green>已完成</font>  
+链表合并[链表合并.js](./算法/链表合并.js) <font color=green>已完成</font>  
 
 *** 
 
 ### 编程技巧  
-并发数限制 [并发数限制.js](./codeSkill/并发数限制.js) <font color=green>已完成</font>  
-错误重试 [错误重试.js](./codeSkill/错误重试.js) <font color=green>已完成</font>  
-定时执行任务 [定时执行任务.js](./codeSkill/定时执行任务.js) <font color=green>已完成</font>  
+并发数限制 [并发数限制.js](./编程技巧/并发数限制.js) <font color=green>已完成</font>  
+错误重试 [错误重试.js](./编程技巧/错误重试.js) <font color=green>已完成</font>  
+定时执行任务 [定时执行任务.js](./编程技巧/定时执行任务.js) <font color=green>已完成</font>  
