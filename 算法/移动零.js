@@ -13,9 +13,7 @@ var moveZeroes = function (nums) {
       const firstZeroIdx = nums.indexOf(0);
       // 存在且小于当前元素的位置 则需要更换位置
       if (firstZeroIdx > -1 && i > firstZeroIdx) {
-        const temp = nums[i];
-        nums[firstZeroIdx] = temp;
-        nums[i] = 0;
+        [nums[firstZeroIdx], nums[i]] = [nums[i], nums[firstZeroIdx]];
       }
     }
   }
