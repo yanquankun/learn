@@ -50,6 +50,7 @@ promse.resolve [promse.resolve.js](./源码实现/promse.resolve.js) <font color
 返回数组大的前topK项 [返回数组大的前topK项.js](./算法/返回数组大的前topK项.js) <font color=green>已完成</font>  
 链表合并[链表合并.js](./算法/链表合并.js) <font color=green>已完成</font>  
 链表合并[连续天数的最高销售额.js](./算法/连续天数的最高销售额.js) <font color=green>已完成</font>  
+链表合并[移动零.js](./算法/移动零.js) <font color=green>已完成</font>  
 
 *** 
 
