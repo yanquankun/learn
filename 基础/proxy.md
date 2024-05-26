@@ -32,6 +32,6 @@ let proxyObj = watch(
     console.log(`${property}属性的值变更为了${value}`);
   }
 );
-proxyObj.a;
-proxyObj.a = 2;
+proxyObj.a; // 给{"a":1}的a属性绑定依赖
+proxyObj.a = 2; // a属性的值变更为了2
 ```
