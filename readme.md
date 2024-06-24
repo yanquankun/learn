@@ -51,6 +51,7 @@ promse.resolve [promse.resolve.js](./源码实现/promse.resolve.js) <font color
 链表合并[链表合并.js](./算法/链表合并.js) <font color=green>已完成</font>  
 链表合并[连续天数的最高销售额.js](./算法/连续天数的最高销售额.js) <font color=green>已完成</font>  
 链表合并[移动零.js](./算法/移动零.js) <font color=green>已完成</font>  
+链表合并[生成N对有效括号.js](./算法/生成N对有效括号.js) <font color=green>已完成</font>  
 
 *** 
 
