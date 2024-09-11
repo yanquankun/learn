@@ -13,8 +13,8 @@
 ### 源码实现  
 instanceof [instanceof.js](./源码实现/instanceof.js) <font color=green>已完成</font>  
 new [new.js](./源码实现/new.js) <font color=green>已完成</font>  
-Object.create [Object.create.js](./源码实现/Object.create.js) <font color=red>未完成，存在 bug</font>  
-promise [promise.js](./源码实现/promise.js) <font color=green>已完成</font>  
+Object.create [Object.create.js](./源码实现/Object.create.js) <font color=red>已完成</font>  
+promise [promise.js](./源码实现/promise.js) <font color=green>未完成</font>  
 promise.all [promise.all.js](./源码实现/promise.all.js) <font color=green>已完成</font>  
 promise.race [promise.race.js](./源码实现/promise.race.js) <font color=green>已完成</font>  
 debounce [debounce.js](./源码实现/debounce.js) <font color=green>已完成</font>  
