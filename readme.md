@@ -28,7 +28,8 @@ flat [flat.js](./源码实现/flat.js) <font color=green>已完成</font>
 dataToTree [dataToTree.js](./源码实现/dataToTree.js) <font color=green>已完成</font>  
 LRU [LRU.js](./源码实现/LRU.js) <font color=green>已完成</font>  
 promise.catch [promise.catch.js](./源码实现/promise.catch.js) <font color=green>已完成</font>  
-promse.resolve [promse.resolve.js](./源码实现/promse.resolve.js) <font color=green>已完成</font>  
+promise.resolve [promise.resolve.js](./源码实现/promise.resolve.js) <font color=green>已完成</font>  
+promise [promise.js](./源码实现/promise.js) <font color=green>已完成</font>  
 
 ***
 
