@@ -33,14 +33,14 @@ console.log('end');
 // 微任务队列为空，先执行宏任务
 // 同步执行：start、promise start、promise end、async、fn2、fn3、end
 // 宏任务队列: none
-// 微任务队列：p.then0、fn2 await后部分、p.then1、fn await后部分
+// 微任务队列：p.then1、p.then2、fn2 await后部分、fn await后部分
 // 此时第一轮任务执行完
 
 // 第二轮：
-// 先清理微任务p.then0、fn2 await后部分、p.then1、fn await后部分
+// 先清理微任务p.then1、p.then2、fn2 await后部分、fn await后部分
 // 宏任务：none
 // 微任务：none
-// 输出promise1、fn2 end、promise2、end2
+// 输出promise1、promise2、fn2 end、end2
 
 // 第三轮
 // 宏任务：none
