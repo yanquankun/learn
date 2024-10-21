@@ -59,7 +59,8 @@ promise [promise.js](./源码实现/promise.js) <font color=green>已完成</fon
 ### 编程技巧  
 并发数限制 [并发数限制.js](./编程技巧/并发数限制.js) <font color=green>已完成</font>  
 错误重试 [错误重试.js](./编程技巧/错误重试.js) <font color=green>已完成</font>  
-定时执行任务 [定时执行任务.js](./编程技巧/定时执行任务.js) <font color=green>已完成</font> 
+定时执行任务 [定时执行任务.js](./编程技巧/定时执行任务.js) <font color=green>已完成</font>  
+调度器的使用 [调度器的使用.md](./编程技巧/调度器的使用.md) <font color=green>已完成</font>  
 
 *** 
 
