@@ -53,6 +53,7 @@ promise [promise.js](./源码实现/promise.js) <font color=green>已完成</fon
 链表合并[连续天数的最高销售额.js](./算法/连续天数的最高销售额.js) <font color=green>已完成</font>  
 链表合并[移动零.js](./算法/移动零.js) <font color=green>已完成</font>  
 链表合并[生成N对有效括号.js](./算法/生成N对有效括号.js) <font color=green>已完成</font>  
+三数之和[三数之和.js](./算法/三数之和.js) <font color=green>已完成</font>  
 
 *** 
 
