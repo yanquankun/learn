@@ -55,6 +55,7 @@ promise [promise.js](./源码实现/promise.js) <font color=green>已完成</fon
 链表合并[生成N对有效括号.js](./算法/生成N对有效括号.js) <font color=green>已完成</font>  
 三数之和[三数之和.js](./算法/三数之和.js) <font color=green>已完成</font>  
 Z字形变换[Z字形变换.js](./算法/Z字形变换.js) <font color=green>已完成</font>  
+字符串转换整数(atoi)[字符串转换整数(atoi).js](./算法/字符串转换整数(atoi).js) <font color=green>已完成</font>  
 
 *** 
 
