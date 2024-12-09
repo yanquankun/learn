@@ -60,6 +60,7 @@ Z字形变换[Z字形变换.js](./算法/Z字形变换.js) <font color=green>已
 整数转罗马数字[整数转罗马数字.js](./算法/整数转罗马数字.js) <font color=green>已完成</font>  
 最接近的三数之和[最接近的三数之和.js](./算法/最接近的三数之和.js) <font color=green>已完成</font>  
 电话号码的字母组合[电话号码的字母组合.js](./算法/电话号码的字母组合.js) <font color=green>已完成</font>  
+括号生成[括号生成.js](./算法/括号生成.js) <font color=green>已完成</font>  
 
 *** 
 
