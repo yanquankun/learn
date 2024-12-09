@@ -68,6 +68,7 @@ Z字形变换[Z字形变换.js](./算法/Z字形变换.js) <font color=green>已
 错误重试 [错误重试.js](./编程技巧/错误重试.js) <font color=green>已完成</font>  
 定时执行任务 [定时执行任务.js](./编程技巧/定时执行任务.js) <font color=green>已完成</font>  
 调度器的使用 [调度器的使用.md](./编程技巧/调度器的使用.md) <font color=green>已完成</font>  
+异步加法 [异步加法.md](./编程技巧/异步加法.js) <font color=green>已完成</font>  
 
 *** 
 
