@@ -78,4 +78,5 @@ Z字形变换[Z字形变换.js](./算法/Z字形变换.js) <font color=green>已
 事件循环执行顺序 [事件循环执行顺序.js](./随记/事件循环执行顺序.js) <font color=green>已完成</font>  
 docker容器宕机解决 [docker容器宕机解决.md](./随记/docker容器宕机解决.md) <font color=green>已完成</font>   
 构建工具理解.md [构建工具理解.md](./随记/构建工具理解.md) <font color=green>已完成</font>   
+音频可视化.md [音频可视化.md](./随记/音频可视化.md) <font color=green>已完成</font>   
  
