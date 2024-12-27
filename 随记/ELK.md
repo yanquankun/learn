@@ -166,9 +166,9 @@ i18n.locale: "zh-CN"
 docker-compose up -d
 ```
 
-会看到 logstash、kibana、elasticsearch 三个容器启动成功，通过浏览器访问我们的 es 和 kibana 地址可以看到如下界面即启动成功 😋，接着我们就可以调用我们的 logstash 服务进行日志上报
+会看到 logstash、kibana、elasticsearch 三个容器启动成功，通过浏览器访问我们的 es 和 kibana 地址可以看到如下界面即启动成功 😋，接着我们就可以调用我们的 logstash 服务进行日志上报  
 
-- es 界面
+- es 界面  
   ![es界面](https://www.yanquankun.com:9300/cdn/elk/es.png)
 
 - kibana 界面
