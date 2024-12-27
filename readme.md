@@ -1,16 +1,18 @@
 **Author**：闫全堃[Mint]  
 **GitHub**：[GitHub](https://github.com/yanquankun/learn)  
 **Desc**：前端学习仓库，俗话说好记性不如烂笔头 😄，创建这个仓库主要为了手写各种源码以及算法题，将自己做过的记录下来，防止忘记，有错误或更好解法欢迎大家可以提[pr](https://github.com/yanquankun/learn/pulls)  
-**我们的口号**：做对的事，而不是容易的事 ✌🏻，代码洁癖【不是实现了就 ok 了，还要考虑细节处理才是】  
+**我们的口号**：做对的事，而不是容易的事 ✌🏻，代码洁癖【不是实现了就 ok 了，还要考虑细节处理才是】
 
 ---
 
 ### 目前已有方法列表
-<font color=Blue>|+++Method+++|+++链接+++|+++是否完成+++|</font>  
 
-***
+<font color=Blue>|+++Method+++|+++链接+++|+++是否完成+++|</font>
 
-### 源码实现  
+---
+
+### 源码实现
+
 instanceof [instanceof.js](./源码实现/instanceof.js) <font color=green>已完成</font>  
 new [new.js](./源码实现/new.js) <font color=green>已完成</font>  
 Object.create [Object.create.js](./源码实现/Object.create.js) <font color=red>已完成</font>  
@@ -29,11 +31,12 @@ dataToTree [dataToTree.js](./源码实现/dataToTree.js) <font color=green>已�
 LRU [LRU.js](./源码实现/LRU.js) <font color=green>已完成</font>  
 promise.catch [promise.catch.js](./源码实现/promise.catch.js) <font color=green>已完成</font>  
 promise.resolve [promise.resolve.js](./源码实现/promise.resolve.js) <font color=green>已完成</font>  
-promise [promise.js](./源码实现/promise.js) <font color=green>已完成</font>  
+promise [promise.js](./源码实现/promise.js) <font color=green>已完成</font>
 
-***
+---
 
-### 算法  
+### 算法
+
 红绿灯 [红绿灯.js](./算法/红绿灯.js) <font color=green>已完成</font>  
 链表反转 [链表反转.js](./算法/链表反转.js) <font color=green>已完成</font>  
 二叉树遍历 [二叉树遍历.js](./算法/二叉树遍历.js) <font color=green>已完成</font>  
@@ -45,17 +48,17 @@ promise [promise.js](./源码实现/promise.js) <font color=green>已完成</fon
 二叉树逐层遍历 [二叉树逐层遍历.js](./算法/二叉树逐层遍历.js) <font color=green>未完成，解法存在问题</font>  
 回文字符串 [回文字符串.js](./算法/回文字符串.js) <font color=green>已完成</font>  
 是否是素数 [是否是素数.js](./算法/是否是素数.js) <font color=green>已完成</font>  
-获取n以内的所有素数 [获取n以内的所有素数.js](./算法/获取n以内的所有素数.js) <font color=green>已完成</font>  
+获取 n 以内的所有素数 [获取 n 以内的所有素数.js](./算法/获取n以内的所有素数.js) <font color=green>已完成</font>  
 大数相加 [大数相加.js](./算法/大数相加.js) <font color=green>已完成</font>  
 字符串出现的不重复最长长度 [字符串出现的不重复最长长度.js](./算法/字符串出现的不重复最长长度.js) <font color=green>已完成</font>  
-返回数组大的前topK项 [返回数组大的前topK项.js](./算法/返回数组大的前topK项.js) <font color=green>已完成</font>  
+返回数组大的前 topK 项 [返回数组大的前 topK 项.js](./算法/返回数组大的前topK项.js) <font color=green>已完成</font>  
 链表合并[链表合并.js](./算法/链表合并.js) <font color=green>已完成</font>  
 链表合并[连续天数的最高销售额.js](./算法/连续天数的最高销售额.js) <font color=green>已完成</font>  
 链表合并[移动零.js](./算法/移动零.js) <font color=green>已完成</font>  
-链表合并[生成N对有效括号.js](./算法/生成N对有效括号.js) <font color=green>已完成</font>  
+链表合并[生成 N 对有效括号.js](./算法/生成N对有效括号.js) <font color=green>已完成</font>  
 三数之和[三数之和.js](./算法/三数之和.js) <font color=green>已完成</font>  
-Z字形变换[Z字形变换.js](./算法/Z字形变换.js) <font color=green>已完成</font>  
-字符串转换整数(atoi)[字符串转换整数(atoi).js](./算法/字符串转换整数(atoi).js) <font color=green>已完成</font>  
+Z 字形变换[Z 字形变换.js](./算法/Z字形变换.js) <font color=green>已完成</font>  
+字符串转换整数(atoi)[字符串转换整数(atoi).js](<./算法/字符串转换整数(atoi).js>) <font color=green>已完成</font>  
 盛最多水的容器[盛最多水的容器.js](./算法/盛最多水的容器.js) <font color=green>已完成</font>  
 整数转罗马数字[整数转罗马数字.js](./算法/整数转罗马数字.js) <font color=green>已完成</font>  
 最接近的三数之和[最接近的三数之和.js](./算法/最接近的三数之和.js) <font color=green>已完成</font>  
@@ -63,23 +66,30 @@ Z字形变换[Z字形变换.js](./算法/Z字形变换.js) <font color=green>已
 括号生成[括号生成.js](./算法/括号生成.js) <font color=green>已完成</font>  
 两数相加[两数相加.js](./算法/两数相加.js) <font color=green>已完成</font>  
 两两交换链表中的节点[两两交换链表中的节点.js](./算法/两两交换链表中的节点.js) <font color=green>已完成</font>  
-两数相除[两数相除.js](./算法/两数相除.js) <font color=green>已完成</font>  
+两数相除[两数相除.js](./算法/两数相除.js) <font color=green>已完成</font>
 
-*** 
+---
 
-### 编程技巧  
+### 编程技巧
+
 并发数限制 [并发数限制.js](./编程技巧/并发数限制.js) <font color=green>已完成</font>  
 错误重试 [错误重试.js](./编程技巧/错误重试.js) <font color=green>已完成</font>  
 定时执行任务 [定时执行任务.js](./编程技巧/定时执行任务.js) <font color=green>已完成</font>  
 调度器的使用 [调度器的使用.md](./编程技巧/调度器的使用.md) <font color=green>已完成</font>  
-异步加法 [异步加法.md](./编程技巧/异步加法.js) <font color=green>已完成</font>  
+异步加法 [异步加法.md](./编程技巧/异步加法.js) <font color=green>已完成</font>
 
-*** 
+---
 
 ### 随记
+
 事件循环执行顺序 [事件循环执行顺序.js](./随记/事件循环执行顺序.js) <font color=green>已完成</font>  
-docker容器宕机解决 [docker容器宕机解决.md](./随记/docker容器宕机解决.md) <font color=green>已完成</font>   
-构建工具理解.md [构建工具理解.md](./随记/构建工具理解.md) <font color=green>已完成</font>   
-音频可视化.md [音频可视化.md](./随记/音频可视化.md) <font color=green>已完成</font>   
-ELK.md [ELK.md](./随记/ELK.md) <font color=green>已完成</font>   
- 
+docker 容器宕机解决 [docker 容器宕机解决.md](./随记/docker容器宕机解决.md) <font color=green>已完成</font>  
+构建工具理解.md [构建工具理解.md](./随记/构建工具理解.md) <font color=green>已完成</font>  
+音频可视化.md [音频可视化.md](./随记/音频可视化.md) <font color=green>已完成</font>  
+ELK.md [ELK.md](./随记/ELK.md) <font color=green>已完成</font>
+
+### 基础
+
+模块化.md [ELK.md](./基础/模块化.md) <font color=green>已完成</font>
+Math.pow.js [Math.pow.js](./基础/Math.pow.js) <font color=green>已完成</font>  
+proxy.md [ELK.md](./基础/proxy.md) <font color=green>已完成</font>  
