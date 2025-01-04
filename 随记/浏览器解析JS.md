@@ -64,8 +64,8 @@ AST 分为两个阶段：
 
 ### 流程图
 
-**结尾**
-
 ![V8解析js流程.png](https://www.yanquankun.cn/cdn/V8解析js流程.png)
+
+**结尾**
 
 最后，给大家附送下[ECMA 官方文档](https://tc39.es/ecma262/#sec-intro)以及[V8 引擎源码](https://chromium.googlesource.com/v8/v8.git/+/main/)
