@@ -67,7 +67,7 @@ Z 字形变换[Z 字形变换.js](./算法/Z字形变换.js) <font color=green>�
 两数相加[两数相加.js](./算法/两数相加.js) <font color=green>已完成</font>  
 两两交换链表中的节点[两两交换链表中的节点.js](./算法/两两交换链表中的节点.js) <font color=green>已完成</font>  
 两数相除[两数相除.js](./算法/两数相除.js) <font color=green>已完成</font>  
-最大子数组和[最大子数组和.js](./算法/最大子数组和.js) <font color=green>已完成</font>  
+最大子数组和[最大子数组和.js](./算法/最大子数组和.js) <font color=green>已完成</font>
 
 ---
 
@@ -87,10 +87,12 @@ Z 字形变换[Z 字形变换.js](./算法/Z字形变换.js) <font color=green>�
 docker 容器宕机解决 [docker 容器宕机解决.md](./随记/docker容器宕机解决.md) <font color=green>已完成</font>  
 构建工具理解.md [构建工具理解.md](./随记/构建工具理解.md) <font color=green>已完成</font>  
 音频可视化.md [音频可视化.md](./随记/音频可视化.md) <font color=green>已完成</font>  
-ELK.md [ELK.md](./随记/ELK.md) <font color=green>已完成</font>
+ELK.md [ELK.md](./随记/ELK.md) <font color=green>已完成</font>  
+浏览器解析JS.md [浏览器解析JS.md](./随记/浏览器解析JS.md) <font color=green>已完成</font>  
+AST.md [AST.md](./随记/AST.md) <font color=green>已完成</font>  
 
 ### 基础
 
 模块化.md [ELK.md](./基础/模块化.md) <font color=green>已完成</font>
 Math.pow.js [Math.pow.js](./基础/Math.pow.js) <font color=green>已完成</font>  
-proxy.md [ELK.md](./基础/proxy.md) <font color=green>已完成</font>  
+proxy.md [ELK.md](./基础/proxy.md) <font color=green>已完成</font>
