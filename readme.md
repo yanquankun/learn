@@ -97,3 +97,7 @@ AST.md [AST.md](./随记/AST.md) <font color=green>已完成</font>
 模块化.md [ELK.md](./基础/模块化.md) <font color=green>已完成</font>
 Math.pow.js [Math.pow.js](./基础/Math.pow.js) <font color=green>已完成</font>  
 proxy.md [ELK.md](./基础/proxy.md) <font color=green>已完成</font>
+
+### 个人技术项目
+forbid-lint.md [forbid-lint.md](./个人技术项目/forbid-lint.md) <font color=green>已完成</font>
+mpsc-cli.md [mpsc-cli.md](./个人技术项目/mpsc-cli.md) <font color=green>已完成</font>
