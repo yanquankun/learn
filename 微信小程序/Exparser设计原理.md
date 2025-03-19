@@ -364,11 +364,3 @@ ShadowDOM的概念在HTML中非常常见，举一个例子，在 HTML 中有 Vid
 `Exparser`是微信小程序的组件组织框架，内置在小程序基础库中，为小程序提供各种各样的组件支撑。内置组件和自定义组件都有Exparser组织管理。
 
 有关`Exparser`可参阅官网：*https://developers.weixin.qq.com/ebook?action=get_post_info&docid=0000aac998c9b09b00863377251c0a*
-
----
-
--*EOF*-
-
-
-
-

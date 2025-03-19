@@ -76,9 +76,3 @@ number = Math.floor(number + eps);
 
 
 这就是整个 `WXSS` 编译后得到的结果，编译后的 `JS` 代码是通过`eval`方法注入执行，这样的话完成了`WXSS`的一整套流程。
-
----
-
--*EOF*-
-
-
