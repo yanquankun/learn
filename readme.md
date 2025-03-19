@@ -123,6 +123,13 @@ UpdateQueue [UpdateQueue.md](./React/UpdateQueue.md) <font color=green>已完成
 
 ### Vue
 
+生命周期详解 [生命周期详解.md](./Vue/生命周期详解.md) <font color=green>已完成</font>  
+响应式原理 [响应式原理.md](./Vue/响应式原理.md) <font color=green>已完成</font>  
+性能优化 [性能优化.md](./Vue/性能优化.md) <font color=green>已完成</font>  
+虚拟DOM和render函数 [虚拟DOM和render函数.md](./Vue/虚拟DOM和render函数.md) <font color=green>已完成</font>  
+computed [computed.md](./Vue/computed.md) <font color=green>已完成</font>  
+diff算法 [diff算法.md](./Vue/diff算法.md) <font color=green>已完成</font>  
+vue问题汇总 [vue问题汇总.md](./Vue/vue问题汇总.md) <font color=green>已完成</font>  
 
 ### 微信小程序
 
