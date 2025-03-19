@@ -120,3 +120,12 @@ React中的事件 [React中的事件.md](./React/React中的事件.md) <font col
 性能优化策略之bailout [性能优化策略之bailout.md](./React/性能优化策略之bailout.md) <font color=green>已完成</font>  
 性能优化策略之eagerState [性能优化策略之eagerState.md](./React/性能优化策略之eagerState.md) <font color=green>已完成</font>  
 UpdateQueue [UpdateQueue.md](./React/UpdateQueue.md) <font color=green>已完成</font>  
+
+### Vue
+
+
+### 微信小程序
+
+双线程架构 [双线程架构.md](./微信小程序/双线程架构.md) <font color=green>已完成</font>  
+Exparser设计原理 [Exparser设计原理.md](./微信小程序/Exparser设计原理.md) <font color=green>已完成</font>  
+WXSS编译与适配 [WXSS编译与适配.md](./微信小程序/WXSS编译与适配.md) <font color=green>已完成</font>  
