@@ -47,20 +47,20 @@
 
    `_update`函数首先会给组件的`_vnode`属性重新赋值，让它指向新树
 
-   <img src="http://mdrs.yuanjin.tech/img/20210301193804.png" alt="image-20210301193804498" style="zoom:50%;" />
+   <img src="https://www.yanquankun.cn/cdn/vue/20210301193804.png" alt="image-20210301193804498" style="zoom:50%;" />
 
    然后会判断旧树是否存在：
 
    - 不存在：说明这是第一次加载组件，于是通过内部的`patch`函数，直接遍历新树，为每个节点生成真实DOM，挂载到每个节点的`elm`属性上
 
-     <img src="http://mdrs.yuanjin.tech/img/20210301194237.png" alt="image-20210301194237825" style="zoom:43%;" />
+     <img src="https://www.yanquankun.cn/cdn/vue/20210301194237.png" alt="image-20210301194237825" style="zoom:43%;" />
 
    - 存在：说明之前已经渲染过该组件，于是通过内部的`patch`函数，对新旧两棵树进行对比，以达到下面两个目标：
 
      - 完成对所有真实dom的最小化处理
      - 让新树的节点对应合适的真实dom
 
-     <img src="http://mdrs.yuanjin.tech/img/20210301195003.png" alt="image-20210301195003696" style="zoom:50%;" />
+     <img src="https://www.yanquankun.cn/cdn/vue/20210301195003.png" alt="image-20210301195003696" style="zoom:50%;" />
 
 3. `patch`函数的对比流程
 
@@ -76,7 +76,7 @@
 
    1. **根节点比较**
 
-      <img src="http://mdrs.yuanjin.tech/img/20210301203350.png" alt="image-20210301203350246" style="zoom:50%;" />
+      <img src="https://www.yanquankun.cn/cdn/vue/20210301203350.png" alt="image-20210301203350246" style="zoom:50%;" />
 
       `patch`函数首先对根节点进行比较
 

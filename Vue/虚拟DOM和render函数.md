@@ -5,8 +5,8 @@
    虚拟dom本质上就是一个普通的JS对象，用于描述视图的界面结构
 
    在vue中，每个组件都有一个`render`函数，每个`render`函数都会返回一个虚拟dom树，这也就意味着每个组件都对应一棵虚拟DOM树
-
-   <img src="http://mdrs.yuanjin.tech/img/20210225140726.png" alt="image-20210225140726003" style="zoom:30%;" align="left" />
+ 
+   ![image-20210225140726003](https://www.yanquankun.cn/cdn/vue/20210225140726.png)
 
 2. 为什么需要虚拟dom？
 
@@ -22,7 +22,7 @@
 
    这样一来，就保证了对真实dom达到最小的改动。
 
-   <img src="http://mdrs.yuanjin.tech/img/20210225144108.png" alt="image-20210225144108143" style="zoom:50%;" align="left" />
+   ![image-20210225144108](https://www.yanquankun.cn/cdn/vue/20210225144108.png)
 
 4. 模板和虚拟dom的关系
 
