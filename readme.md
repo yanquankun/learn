@@ -69,6 +69,7 @@ Z 字形变换[Z 字形变换.js](./算法/Z字形变换.js) <font color=green>�
 两数相除[两数相除.js](./算法/两数相除.js) <font color=green>已完成</font>  
 最大子数组和[最大子数组和.js](./算法/最大子数组和.js) <font color=green>已完成</font>  
 组合总和[组合总和.js](./算法/组合总和.js) <font color=green>已完成</font>  
+全排列[全排列.js](./算法/全排列.js) <font color=green>已完成</font>  
 
 ---
 
