@@ -92,6 +92,7 @@ docker 容器宕机解决 [docker 容器宕机解决.md](./随记/docker容器�
 ELK.md [ELK.md](./随记/ELK.md) <font color=green>已完成</font>  
 浏览器解析JS.md [浏览器解析JS.md](./随记/浏览器解析JS.md) <font color=green>已完成</font>  
 AST.md [AST.md](./随记/AST.md) <font color=green>已完成</font>  
+漫谈性能优化.md [漫谈性能优化.md](./随记/漫谈性能优化.md) <font color=green>已完成</font>  
 
 ### 基础
 
@@ -137,3 +138,8 @@ vue问题汇总 [vue问题汇总.md](./Vue/vue问题汇总.md) <font color=green
 双线程架构 [双线程架构.md](./微信小程序/双线程架构.md) <font color=green>已完成</font>  
 Exparser设计原理 [Exparser设计原理.md](./微信小程序/Exparser设计原理.md) <font color=green>已完成</font>  
 WXSS编译与适配 [WXSS编译与适配.md](./微信小程序/WXSS编译与适配.md) <font color=green>已完成</font>  
+
+
+
+### 模块化
+
