@@ -16,7 +16,7 @@
 
 也就是说，只要我们有一种方式，能够将真实 DOM 的层次结构描述出来，那么这就是一个虚拟 DOM。
 
-<img src="https://xiejie-typora.oss-cn-chengdu.aliyuncs.com/2023-02-23-034001.png" alt="image-20230223114000816" style="zoom: 50%;" />
+<img src="https://oss.yanquankun.cn/oss-cdn/2023-02-23-034001.png!watermark" alt="image-20230223114000816" style="zoom: 50%;" />
 
 在 React 中，React 团队使用的是 JS 对象来对 DOM 结构进行一个描述。但是很多人会直接把 JS 对象和虚拟 DOM 划等号，这种理解是不太准确的，比较片面的。
 
@@ -118,7 +118,7 @@ UI = f（state）这个公式进一步进行拆分可以拆分成两步：
 
 经过 Babel 编译后结果如下：
 
-![image-20221226155735808](https://xiejie-typora.oss-cn-chengdu.aliyuncs.com/2022-12-26-075736.png)
+![image-20221226155735808](https://oss.yanquankun.cn/oss-cdn/2022-12-26-075736.png!watermark)
 
 在源码中 createElement 方法如下：
 

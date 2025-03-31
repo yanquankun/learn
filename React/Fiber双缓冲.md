@@ -139,19 +139,19 @@ ReactDOM.createRoot(rootElement).render(<App />);
 
 当执行 ReactDOM.createRoot 的时候，会创建如下的结构：
 
-<img src="https://xiejie-typora.oss-cn-chengdu.aliyuncs.com/2023-02-24-071516.png" alt="image-20230224151515483" style="zoom:50%;" />
+<img src="https://oss.yanquankun.cn/oss-cdn/2023-02-24-071516.png!watermark" alt="image-20230224151515483" style="zoom:50%;" />
 
 此时会有一个 HostRootFiber，FiberRootNode 通过 current 来指向 HostRootFiber。
 
 接下来进入到 mount 流程，该流程会基于每个 React 元素以深度优先的原则依次生成 wip FiberNode，并且每一个 wipFiberNode 会连接起来，如下图所示：
 
-<img src="https://xiejie-typora.oss-cn-chengdu.aliyuncs.com/2023-02-24-072421.png" alt="image-20230224152421236" style="zoom:50%;" />
+<img src="https://oss.yanquankun.cn/oss-cdn/2023-02-24-072421.png!watermark" alt="image-20230224152421236" style="zoom:50%;" />
 
 生成的 wip FiberTree 里面的每一个 FiberNode 会和 current FiberTree 里面的 FiberNode进行关联，关联的方式就是通过 alternate。但是目前 currentFiberTree里面只有一个 HostRootFiber，因此就只有这个 HostRootFiber 进行了 alternate 的关联。
 
 当 wip FiberTree生成完毕后，也就意味着 render 阶段完毕了，此时 FiberRootNode就会被传递给 Renderer（渲染器），接下来就是进行渲染工作。渲染工作完毕后，浏览器中就显示了对应的 UI，此时 FiberRootNode.current 就会指向这颗 wip Fiber Tree，曾经的 wip Fiber Tree 它就会变成 current FiberTree，完成了双缓存的工作：
 
-<img src="https://xiejie-typora.oss-cn-chengdu.aliyuncs.com/2023-02-24-072953.png" alt="image-20230224152953358" style="zoom:50%;" />
+<img src="https://oss.yanquankun.cn/oss-cdn/2023-02-24-072953.png!watermark" alt="image-20230224152953358" style="zoom:50%;" />
 
 
 
@@ -159,13 +159,13 @@ ReactDOM.createRoot(rootElement).render(<App />);
 
 点击 p 元素，会触发更新，这一操作就会开启 update 流程，此时就会生成一颗新的 wip Fiber Tree，流程和之前是一样的
 
-<img src="https://xiejie-typora.oss-cn-chengdu.aliyuncs.com/2023-02-24-073250.png" alt="image-20230224153250126" style="zoom:48%;" />
+<img src="https://oss.yanquankun.cn/oss-cdn/2023-02-24-073250.png!watermark" alt="image-20230224153250126" style="zoom:48%;" />
 
 新的 wip Fiber Tree 里面的每一个 FiberNode 和 current Fiber Tree 的每一个 FiberNode 通过 alternate 属性进行关联。
 
 当 wip Fiber Tree 生成完毕后，就会经历和之前一样的流程，FiberRootNode 会被传递给 Renderer 进行渲染，此时宿主环境所渲染出来的真实 UI 对应的就是左边 wip Fiber Tree 所对应的 DOM 结构，FiberRootNode.current 就会指向左边这棵树，右边的树就再次成为了新的 wip Fiber Tree
 
-<img src="https://xiejie-typora.oss-cn-chengdu.aliyuncs.com/2023-02-24-073639.png" alt="image-20230224153638862" style="zoom:50%;" />
+<img src="https://oss.yanquankun.cn/oss-cdn/2023-02-24-073639.png!watermark" alt="image-20230224153638862" style="zoom:50%;" />
 
 这个就是 Fiber双缓存的工作原理。
 

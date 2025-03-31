@@ -32,7 +32,7 @@ React v15以及之前的架构称之为 Stack 架构，从 v16 开始，React �
 
 平时我们在浏览网页的时候，这张网页实际上是由浏览器绘制出来的，就像一个画家画画一样
 
-<img src="https://xiejie-typora.oss-cn-chengdu.aliyuncs.com/2023-02-23-063619.jpg" alt="draw" style="zoom:21%;" />
+<img src="https://oss.yanquankun.cn/oss-cdn/2023-02-23-063619.jpg!watermark" alt="draw" style="zoom:21%;" />
 
 平时我们所浏览的网页，里面往往会有一些动起来的东西，比如轮播图、百叶窗之类的，本质其实就是浏览器不停的在进行绘制。
 
@@ -40,7 +40,7 @@ React v15以及之前的架构称之为 Stack 架构，从 v16 开始，React �
 
 浏览器在绘制一帧画面的时候，实际上还有很多的事情要做：
 
-![image-20221227140043781](https://xiejie-typora.oss-cn-chengdu.aliyuncs.com/2022-12-27-060044.png)
+![image-20221227140043781](https://oss.yanquankun.cn/oss-cdn/2022-12-27-060044.png!watermark)
 
 上图中的任务被称之为“渲染流水线”，每次执行流水线的时候，大致是需要如上的一些步骤，但是并不是说每一次所有的任务都需要全部执行：
 
@@ -60,7 +60,7 @@ React v15以及之前的架构称之为 Stack 架构，从 v16 开始，React �
 
 假设有如下的 DOM 层次结构：
 
-<img src="https://xiejie-typora.oss-cn-chengdu.aliyuncs.com/2023-02-23-072638.png" alt="image-20230223152638127" style="zoom:50%;" />
+<img src="https://oss.yanquankun.cn/oss-cdn/2023-02-23-072638.png!watermark" alt="image-20230223152638127" style="zoom:50%;" />
 
 那么转换成虚拟 DOM 对象结构大致如下：
 
@@ -109,7 +109,7 @@ React v15以及之前的架构称之为 Stack 架构，从 v16 开始，React �
 
 在 React v16 版本之前，进行两颗虚拟 DOM 树的对比的时候，需要涉及到遍历上面的结构，这个时候只能使用递归，而且这种递归是不能够打断的，一条路走到黑，从而造成了 JS 执行时间过长。
 
-<img src="https://xiejie-typora.oss-cn-chengdu.aliyuncs.com/2022-12-27-070133.png" alt="image-20221227150133112" style="zoom: 30%;" />
+<img src="https://oss.yanquankun.cn/oss-cdn/2022-12-27-070133.png!watermark" alt="image-20221227150133112" style="zoom: 30%;" />
 
 这样的架构模式，官方就称之为 Stack 架构模式，因为采用的是递归，会不停的开启新的函数栈。
 
@@ -155,13 +155,13 @@ Fiber 本质上也是一个对象，但是和之前 React 元素不同的地方�
 
 如下图：
 
-<img src="https://xiejie-typora.oss-cn-chengdu.aliyuncs.com/2023-02-24-032509.png" alt="image-20230224112508425" style="zoom:50%;" />
+<img src="https://oss.yanquankun.cn/oss-cdn/2023-02-24-032509.png!watermark" alt="image-20230224112508425" style="zoom:50%;" />
 
 使用链表这种结构，有一个最大的好处就是在进行整颗树的对比（reconcile）计算时，这个过程是可以被打断。
 
 在发现一帧时间已经不够，不能够再继续执行 JS，需要渲染下一帧的时候，这个时候就会打断 JS 的执行，优先渲染下一帧。渲染完成后再接着回来完成上一次没有执行完的 JS 计算。
 
-<img src="https://xiejie-typora.oss-cn-chengdu.aliyuncs.com/2022-12-27-070226.png" alt="image-20221227150225918" style="zoom:30%;" />
+<img src="https://oss.yanquankun.cn/oss-cdn/2022-12-27-070226.png!watermark" alt="image-20221227150225918" style="zoom:30%;" />
 
 官方还提供了一个 Stack 架构和 Fiber 架构的对比示例：https://claudiopro.github.io/react-fiber-vs-stack-demo/
 

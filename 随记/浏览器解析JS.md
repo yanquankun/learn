@@ -63,7 +63,7 @@ AST 分为两个阶段：
 
 ### 流程图
 
-![V8解析js流程.png](https://www.yanquankun.cn/cdn/V8解析js流程.png)
+![V8解析js流程.png](https://oss.yanquankun.cn/oss-cdn/V8%E8%A7%A3%E6%9E%90js%E6%B5%81%E7%A8%8B.png!watermark)
 
 **结尾**
 

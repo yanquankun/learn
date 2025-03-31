@@ -11,7 +11,7 @@
 
 整体流程图如下：
 
-<img src="https://xiejie-typora.oss-cn-chengdu.aliyuncs.com/2023-03-01-060445.png" alt="image-20230301140444822" style="zoom:50%;" />
+<img src="https://oss.yanquankun.cn/oss-cdn/2023-03-01-060445.png!watermark" alt="image-20230301140444822" style="zoom:50%;" />
 
 
 

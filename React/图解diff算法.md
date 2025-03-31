@@ -196,15 +196,15 @@ React 团队发现，在日常开发中，对节点的更新操作的情况往�
 
 首先遍历到 div.key.a，发现该 FiberNode 能够复用
 
-<img src="https://xiejie-typora.oss-cn-chengdu.aliyuncs.com/2023-02-28-032654.png" alt="image-20230228112653938" style="zoom:50%;" />
+<img src="https://oss.yanquankun.cn/oss-cdn/2023-02-28-032654.png!watermark" alt="image-20230228112653938" style="zoom:50%;" />
 
 继续往后面走，发现 div.key.b 也能够复用
 
-<img src="https://xiejie-typora.oss-cn-chengdu.aliyuncs.com/2023-02-28-075146.png" alt="image-20230228155145634" style="zoom:50%;" />
+<img src="https://oss.yanquankun.cn/oss-cdn/2023-02-28-075146.png!watermark" alt="image-20230228155145634" style="zoom:50%;" />
 
 接下来继续往后面走，div.key.e，这个时候发现 key 不一样，因此第一轮遍历就结束了
 
-<img src="https://xiejie-typora.oss-cn-chengdu.aliyuncs.com/2023-02-28-075345.png" alt="image-20230228155345381" style="zoom:50%;" />
+<img src="https://oss.yanquankun.cn/oss-cdn/2023-02-28-075345.png!watermark" alt="image-20230228155345381" style="zoom:50%;" />
 
 
 
@@ -234,14 +234,14 @@ React 团队发现，在日常开发中，对节点的更新操作的情况往�
 
 首先和上面的一样，div.key.a 和 div.key.b 这两个 FiberNode 可以进行复用，接下来到了第三个节点，此时会发现 key 是相同的，但是 type 不相同，此时就会将对应的旧的 FiberNode 放入到一个叫 deletions 的数组里面，回头统一进行删除，根据新的 React 元素创建一个新的 FiberNode，但是此时的遍历是不会结束的
 
-<img src="https://xiejie-typora.oss-cn-chengdu.aliyuncs.com/2023-02-28-075011.png" alt="image-20230228155011306" style="zoom:50%;" />
+<img src="https://oss.yanquankun.cn/oss-cdn/2023-02-28-075011.png!watermark" alt="image-20230228155011306" style="zoom:50%;" />
 
 接下来继续往后面进行遍历，遍历什么时候结束呢？
 
 - 到末尾了，也就是说整个遍历完了
 - 或者是和示例一相同，可以 key 不同
 
-<img src="https://xiejie-typora.oss-cn-chengdu.aliyuncs.com/2023-02-28-075725.png" alt="image-20230228155725123" style="zoom:50%;" />
+<img src="https://oss.yanquankun.cn/oss-cdn/2023-02-28-075725.png!watermark" alt="image-20230228155725123" style="zoom:50%;" />
 
 
 
@@ -285,7 +285,7 @@ React 团队发现，在日常开发中，对节点的更新操作的情况往�
 
 遍历前面两个节点，发现能够复用，此时就会复用前面的节点，对于 React 元素来讲，遍历完前面两个就已经遍历结束了，因此剩下的FiberNode就会被放入到 deletions 数组里面，之后统一进行删除
 
-<img src="https://xiejie-typora.oss-cn-chengdu.aliyuncs.com/2023-02-28-080358.png" alt="image-20230228160357510" style="zoom:50%;" />
+<img src="https://oss.yanquankun.cn/oss-cdn/2023-02-28-080358.png!watermark" alt="image-20230228160357510" style="zoom:50%;" />
 
 
 
@@ -313,7 +313,7 @@ React 团队发现，在日常开发中，对节点的更新操作的情况往�
 
 根据新的 React 元素新增对应的 FiberNode 即可。
 
-<img src="https://xiejie-typora.oss-cn-chengdu.aliyuncs.com/2023-02-28-080558.png" alt="image-20230228160557549" style="zoom:50%;" />
+<img src="https://oss.yanquankun.cn/oss-cdn/2023-02-28-080558.png!watermark" alt="image-20230228160557549" style="zoom:50%;" />
 
 
 
@@ -343,15 +343,15 @@ React 团队发现，在日常开发中，对节点的更新操作的情况往�
 
 首先会将剩余的旧的 FiberNode 放入到一个 map 里面
 
-<img src="https://xiejie-typora.oss-cn-chengdu.aliyuncs.com/2023-02-28-081414.png" alt="image-20230228161414334" style="zoom:50%;" />
+<img src="https://oss.yanquankun.cn/oss-cdn/2023-02-28-081414.png!watermark" alt="image-20230228161414334" style="zoom:50%;" />
 
 接下来会继续去遍历剩下的 JSX 对象数组，遍历的同时，从 map 里面去找有没有能够复用
 
-<img src="https://xiejie-typora.oss-cn-chengdu.aliyuncs.com/2023-02-28-081859.png" alt="image-20230228161859070" style="zoom:50%;" />
+<img src="https://oss.yanquankun.cn/oss-cdn/2023-02-28-081859.png!watermark" alt="image-20230228161859070" style="zoom:50%;" />
 
 如果在 map 里面没有找到，那就会新增这个 FiberNode，如果整个 JSX 对象数组遍历完成后，map 里面还有剩余的 FiberNode，说明这些 FiberNode 是无法进行复用，直接放入到 deletions 数组里面，后期统一进行删除。
 
-<img src="https://xiejie-typora.oss-cn-chengdu.aliyuncs.com/2023-02-28-082152.png" alt="image-20230228162152734" style="zoom:50%;" />
+<img src="https://oss.yanquankun.cn/oss-cdn/2023-02-28-082152.png!watermark" alt="image-20230228162152734" style="zoom:50%;" />
 
 
 
@@ -361,7 +361,7 @@ React 团队发现，在日常开发中，对节点的更新操作的情况往�
 
 因此在新子节点数组中，会有两个指针，newStartIndex 和 newEndIndex 分别指向新子节点数组的头和尾。在旧子节点数组中，也会有两个指针，oldStartIndex 和 oldEndIndex 分别指向旧子节点数组的头和尾。
 
-<img src="https://xiejie-typora.oss-cn-chengdu.aliyuncs.com/2023-02-28-085007.png" alt="image-20230228165007200" style="zoom:50%;" />
+<img src="https://oss.yanquankun.cn/oss-cdn/2023-02-28-085007.png!watermark" alt="image-20230228165007200" style="zoom:50%;" />
 
 每遍历到一个节点，就尝试进行双端比较：「新前 vs 旧前」、「新后 vs 旧后」、「新后 vs 旧前」、「新前 vs 旧后」，如果匹配成功，更新双端的指针。比如，新旧子节点通过「新前 vs 旧后」匹配成功，那么 newStartIndex += 1，oldEndIndex -= 1。
 

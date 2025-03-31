@@ -20,17 +20,17 @@
 
 举个例子，假设现在我们在开发一个软件，当前软件处于正常的迭代中，拥有 A、B、C 三个正常需求，此时突然来了一个紧急的线上 Bug，整体流程如下：
 
-<img src="https://xiejie-typora.oss-cn-chengdu.aliyuncs.com/2023-03-07-063812.png" alt="image-20230307143812188" style="zoom:50%;" />
+<img src="https://oss.yanquankun.cn/oss-cdn/2023-03-07-063812.png!watermark" alt="image-20230307143812188" style="zoom:50%;" />
 
 为了修复线上 Bug D，你需要先完成需求 A、B、C，之后才能进行 D 的修复，这样的设计实际上是不合理的。
 
 有了代码版本管理工具之后，有紧急线上 Bug 需要修复时，可以先暂存当前分支的修改，在 master 分支修复 Bug D 并紧急上线：
 
-<img src="https://xiejie-typora.oss-cn-chengdu.aliyuncs.com/2023-03-07-064157.png" alt="image-20230307144156888" style="zoom:50%;" />
+<img src="https://oss.yanquankun.cn/oss-cdn/2023-03-07-064157.png!watermark" alt="image-20230307144156888" style="zoom:50%;" />
 
 当 Bug 修复完毕后，再正常的来迭代 A、B、C 需求，之后的迭代会基于 D 这个版本：
 
-<img src="https://xiejie-typora.oss-cn-chengdu.aliyuncs.com/2023-03-07-064357.png" alt="image-20230307144357498" style="zoom:50%;" />
+<img src="https://oss.yanquankun.cn/oss-cdn/2023-03-07-064357.png!watermark" alt="image-20230307144357498" style="zoom:50%;" />
 
 
 
@@ -187,11 +187,11 @@ u0.next = u1;
 
 那么假设在当前的 FiberNode 上面我们又触发了两次更新，分别产生了两个 update（u2 和 u3），新产生的 update 就会形成一个环状链表，shared.pending 就会指向这个环状链表，如下图所示：
 
-<img src="https://xiejie-typora.oss-cn-chengdu.aliyuncs.com/2023-03-07-085309.png" alt="image-20230307165309276" style="zoom:50%;" />
+<img src="https://oss.yanquankun.cn/oss-cdn/2023-03-07-085309.png!watermark" alt="image-20230307165309276" style="zoom:50%;" />
 
 之后进入新的一轮 render，在该 FiberNode 的 beginWork 中，shared.pending 所指向的环状链表就会被拆分，拆分之后接入到 baseUpdate 链表后面：
 
-<img src="https://xiejie-typora.oss-cn-chengdu.aliyuncs.com/2023-03-07-085521.png" alt="image-20230307165521236" style="zoom:50%;" />
+<img src="https://oss.yanquankun.cn/oss-cdn/2023-03-07-085521.png!watermark" alt="image-20230307165521236" style="zoom:50%;" />
 
 接下来就会遍历 updateQueue.baseUpdate，基于 updateQueue.baseState 来计算每个符合优先级条件的 update（这个过程有点类似于 Array.prototype.reduce），最终计算出最新的 state，该 state 被称之为 memoizedState。
 

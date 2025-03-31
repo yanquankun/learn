@@ -996,7 +996,7 @@
 >
 > 基于以上这两点，使得虚拟 *DOM* 的 *Diff* 算法的复杂度从 *O(n^3)* 降到了 *O(n)*。
 >
-> <img src="https://xiejie-typora.oss-cn-chengdu.aliyuncs.com/2021-08-21-062058.png" alt="image-20210821142057777" style="zoom:50%;" />
+> <img src="https://oss.yanquankun.cn/oss-cdn/2021-08-21-062058.png!watermark" alt="image-20210821142057777" style="zoom:50%;" />
 >
 > 当页面的数据发生变化时，*Diff* 算法只会比较同一层级的节点：
 >
@@ -1007,11 +1007,11 @@
 >
 > 比如一下这个情况：
 >
-> ![img](https://xiejie-typora.oss-cn-chengdu.aliyuncs.com/2021-08-21-062225.jpg)
+> ![img](https://oss.yanquankun.cn/oss-cdn/2021-08-21-062225.jpg!watermark)
 >
 > 我们希望可以在 *B* 和 *C* 之间加一个 *F*，*Diff* 算法默认执行起来是这样的：
 >
-> ![img](https://xiejie-typora.oss-cn-chengdu.aliyuncs.com/2021-08-21-062244.jpg)
+> ![img](https://oss.yanquankun.cn/oss-cdn/2021-08-21-062244.jpg!watermark)
 >
 > 即把 *C* 更新成 *F*，*D* 更新成 *C*，*E* 更新成 *D*，最后再插入 *E*
 >
@@ -1019,7 +1019,7 @@
 >
 > 所以我们需要使用 *key* 来给每个节点做一个唯一标识，*Diff* 算法就可以正确的识别此节点，找到正确的位置区插入新的节点。
 >
-> ![img](https://xiejie-typora.oss-cn-chengdu.aliyuncs.com/2021-08-21-062321.jpg)
+> ![img](https://oss.yanquankun.cn/oss-cdn/2021-08-21-062321.jpg!watermark)
 
 
 

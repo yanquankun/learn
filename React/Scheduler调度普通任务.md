@@ -137,7 +137,7 @@ function unstable_scheduleCallback(priorityLevel, callback, options) {
 - 关于任务队列有两个，一个 taskQueue，另一个是 timerQueue，taskQueue 存放普通任务，timerQueue 存放延时任务，任务队列内部用到了小顶堆的算法，保证始终放进去（push）的任务能够进行正常的排序，回头通过 peek 取出任务时，始终取出的是时间优先级最高的那个任务
 - 根据传入的不同的 priorityLevel，会进行不同的 timeout 的设置，任务的 timeout 时间也就不一样了，有的比当前时间还要小，这个代表立即需要执行的，绝大部分的时间比当前时间大。
 
-![image-20221229145930771](https://xiejie-typora.oss-cn-chengdu.aliyuncs.com/2022-12-29-065931.png)
+![image-20221229145930771](https://oss.yanquankun.cn/oss-cdn/2022-12-29-065931.png!watermark)
 
 - 不同的任务，最终调用的函数不一样
   - 普通任务：requestHostCallback(flushWork)

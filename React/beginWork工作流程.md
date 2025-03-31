@@ -7,13 +7,13 @@ Reconciler（协调器） 是 Render 阶段的第二阶段工作，整个工作�
 - 递：beginWork
 - 归：completeWork
 
-![image-20230224111517826](https://xiejie-typora.oss-cn-chengdu.aliyuncs.com/2023-03-10-053722.png)
+![image-20230224111517826](https://oss.yanquankun.cn/oss-cdn/2023-03-10-053722.png!watermark)
 
 beginWork 方法主要是根据传入的 FiberNode 创建下一级的 FiberNode。
 
 整个 beginWork 方法的流程如下图所示：
 
-<img src="https://xiejie-typora.oss-cn-chengdu.aliyuncs.com/2023-03-01-015305.png" alt="image-20230301095305141" style="zoom:50%;" />
+<img src="https://oss.yanquankun.cn/oss-cdn/2023-03-01-015305.png!watermark" alt="image-20230301095305141" style="zoom:50%;" />
 
 首先在 beginWork 中，会判断当前的流程是 mount（初次渲染）还是update（更新），判断的依据就是 currentFiberNode 是否存在
 

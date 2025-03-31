@@ -15,7 +15,7 @@
 
 因此是否命中 bailout 主要也是围绕这三个变量展开的，整体的工作流程如下：
 
-<img src="https://xiejie-typora.oss-cn-chengdu.aliyuncs.com/2023-03-09-010841.png" alt="image-20230309090841270" style="zoom:50%;" />
+<img src="https://oss.yanquankun.cn/oss-cdn/2023-03-09-010841.png!watermark" alt="image-20230309090841270" style="zoom:50%;" />
 
 从上图可以看出，bailout 是否命中发生在 update 阶段，在进入 beginWork 后，会有两次是否命中 bailout 策略的相关判断
 

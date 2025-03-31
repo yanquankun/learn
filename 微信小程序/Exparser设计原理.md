@@ -311,7 +311,7 @@ var myEvent = new CustomEvent(eventname, options);
 
 Shadow DOM 允许将隐藏的 DOM 树附加到常规的 DOM 树中——它以 shadow root 节点为起始根节点，在这个根节点的下方，可以是任意元素，和普通的 DOM 元素一样。
 
-![image-20230215104608599](https://xiejie-typora.oss-cn-chengdu.aliyuncs.com/2023-02-15-024609.png)
+![image-20230215104608599](https://oss.yanquankun.cn/oss-cdn/2023-02-15-024609.png!watermark)
 
 把本来DOM树中的一部分封装起来，并且隐藏起来，隐藏起来的树概念为Shadow Tree。把它理解成DOM上一棵特殊的子树，称之为shadow tree或影子树。也是树，但是很特殊，树里面也是DOM，就像我们上面用document.createElement创建的DOM一样。
 
@@ -319,7 +319,7 @@ Shadow DOM 允许将隐藏的 DOM 树附加到常规的 DOM 树中——它以 s
 
 影子根的父节点，我称之为宿主`shadow host`
 
-<img src="https://xiejie-typora.oss-cn-chengdu.aliyuncs.com/2023-02-15-025037.png" alt="image-20230215105036312" style="zoom:50%;" />
+<img src="https://oss.yanquankun.cn/oss-cdn/2023-02-15-025037.png!watermark" alt="image-20230215105036312" style="zoom:50%;" />
 
 在自定义元素中，里面的结构已经变成了Shadow DOM。顺带说下`attachShadow`中的mode参数有两种值“open”、“closed”；
 
@@ -345,15 +345,15 @@ ShadowDOM的概念在HTML中非常常见，举一个例子，在 HTML 中有 Vid
 
 当我们使用该标签渲染一个视频的时候，会发现页面中会呈现出来一个完整的播放器，里面有播放视频的进度条、播放按钮、音量调节等。明明只有一个标签，为什么内部有如此丰富的内容呢？
 
-<img src="https://xiejie-typora.oss-cn-chengdu.aliyuncs.com/2023-02-15-030726.png" alt="image-20230215110726053" style="zoom:50%;" />
+<img src="https://oss.yanquankun.cn/oss-cdn/2023-02-15-030726.png!watermark" alt="image-20230215110726053" style="zoom:50%;" />
 
 打开控制台查看结构时，看到的也仅仅是一个 video 标签而已，我们可以打开控制台的【设置】，勾选上【显示用户代理Shadow DOM】
 
-<img src="https://xiejie-typora.oss-cn-chengdu.aliyuncs.com/2023-02-15-031137.png" alt="image-20230215111137642" style="zoom:50%;" />
+<img src="https://oss.yanquankun.cn/oss-cdn/2023-02-15-031137.png!watermark" alt="image-20230215111137642" style="zoom:50%;" />
 
 之后就可以看到在 video 中的 shadowDOM了
 
-![image-20230215111304144](https://xiejie-typora.oss-cn-chengdu.aliyuncs.com/2023-02-15-031304.png)
+![image-20230215111304144](https://oss.yanquankun.cn/oss-cdn/2023-02-15-031304.png!watermark)
 
 因此，像img、button、input、textarea、select、radio、checkbox，video等等这些标签是不可以作为宿主的，因为它们本身内部就已经有shadowDOM了。
 

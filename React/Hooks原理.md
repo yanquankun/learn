@@ -271,7 +271,7 @@ function App() {
 
 当上面的函数组件第一次进行初始化后，就会形成一个 hook 的链表：
 
-<img src="https://xiejie-typora.oss-cn-chengdu.aliyuncs.com/2023-03-03-031041.png" alt="image-20230303111041259" style="zoom:50%;" />
+<img src="https://oss.yanquankun.cn/oss-cdn/2023-03-03-031041.png!watermark" alt="image-20230303111041259" style="zoom:50%;" />
 
 接下来我们来看一下更新，更新的时候会执行 updateXXX 对应的方法，相关的代码如下：
 
@@ -410,11 +410,11 @@ function App({ showNumber }) {
 
 那么此时在进行复用的时候就会报错：
 
-<img src="https://xiejie-typora.oss-cn-chengdu.aliyuncs.com/2023-03-03-072611.png" alt="image-20230303152610928" style="zoom:50%;" />
+<img src="https://oss.yanquankun.cn/oss-cdn/2023-03-03-072611.png!watermark" alt="image-20230303152610928" style="zoom:50%;" />
 
 第二次复用的时候，发现 hook 的类型不同， useState !==useRef，那么就会直接报错。因此开发的时候一定要注意 hook 顺序的一致性。
 
-<img src="https://xiejie-typora.oss-cn-chengdu.aliyuncs.com/2023-03-03-031320.jpg" alt="16717800284171" style="zoom: 33%;" />
+<img src="https://oss.yanquankun.cn/oss-cdn/2023-03-03-031320.jpg!watermark" alt="16717800284171" style="zoom: 33%;" />
 
 
 

@@ -169,10 +169,10 @@ docker-compose up -d
 会看到 logstash、kibana、elasticsearch 三个容器启动成功，通过浏览器访问我们的 es 和 kibana 地址可以看到如下界面即启动成功 😋，接着我们就可以调用我们的 logstash 服务进行日志上报  
 
 - es 界面  
-  ![es界面](https://www.yanquankun.cn/cdn/elk/es.png)
+  ![es界面](https://oss.yanquankun.cn/oss-cdn/es.png!watermark)
 
 - kibana 界面
-  ![kibana界面](https://www.yanquankun.cn/cdn/elk/kibana.png)
+  ![kibana界面](https://oss.yanquankun.cn/oss-cdn/kibana.png!watermark)
 
 ```javascript
 // 发送一条测试日志，可在kibana UI中进行索引配置后，在discover菜单中可查到该记录

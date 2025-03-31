@@ -25,7 +25,7 @@ const UI = commit(state); // 根据上一步计算出来的 state 渲染出 UI
 
 每个阶段对应不同的组件：
 
-<img src="https://xiejie-typora.oss-cn-chengdu.aliyuncs.com/2023-02-23-101849.png" alt="image-20230223181848783" style="zoom:50%;" />
+<img src="https://oss.yanquankun.cn/oss-cdn/2023-02-23-101849.png!watermark" alt="image-20230223181848783" style="zoom:50%;" />
 
 - 调度器（Scheduer）：调度任务，为任务排序优先级，让优先级高的任务先进入到 Reconciler
 - 协调器（Reconciler）：生成 Fiber 对象，收集副作用，找出哪些节点发生了变化，打上不同的 flags，著名的 diff 算法也是在这个组件中执行的。
@@ -59,7 +59,7 @@ export default () => {
 
 如下图所示：
 
-<img src="https://xiejie-typora.oss-cn-chengdu.aliyuncs.com/2023-02-23-103449.png" alt="image-20230223183449668" style="zoom: 55%;" />
+<img src="https://oss.yanquankun.cn/oss-cdn/2023-02-23-103449.png!watermark" alt="image-20230223183449668" style="zoom: 55%;" />
 
 ## 调度器
 
@@ -200,7 +200,7 @@ function performUnitOfWork(fiberNode){
 
 最后我们来看一张图：
 
-![image-20230224111517826](https://xiejie-typora.oss-cn-chengdu.aliyuncs.com/2023-02-24-031518.png)
+![image-20230224111517826](https://oss.yanquankun.cn/oss-cdn/2023-02-24-031518.png!watermark)
 
 
 
@@ -216,7 +216,7 @@ Renderer 工作的阶段被称之为 commit 阶段。该阶段会将各种副作
 - Mutation 阶段
 - Layout 阶段
 
-<img src="https://xiejie-typora.oss-cn-chengdu.aliyuncs.com/2023-03-02-090354.png" alt="image-20230302170353345" style="zoom:50%;" />
+<img src="https://oss.yanquankun.cn/oss-cdn/2023-03-02-090354.png!watermark" alt="image-20230302170353345" style="zoom:50%;" />
 
 
 
