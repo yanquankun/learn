@@ -143,3 +143,10 @@ WXSS编译与适配 [WXSS编译与适配.md](./微信小程序/WXSS编译与适�
 
 ### 模块化
 
+JS模块化发展史 [JS模块化发展史.md](./模块化/JS模块化发展史.md) <font color=green>已完成</font>  
+
+commonJs [commonJs.md](./模块化/commonJs.md) <font color=green>已完成</font>  
+
+AMD&CMD [AMD&CMD.md](./模块化/AMD&CMD.md) <font color=green>已完成</font>  
+
+ESM [ESM.md](./模块化/ESM.md) <font color=green>已完成</font>  
