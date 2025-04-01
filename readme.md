@@ -93,6 +93,7 @@ ELK.md [ELK.md](./随记/ELK.md) <font color=green>已完成</font>
 浏览器解析JS.md [浏览器解析JS.md](./随记/浏览器解析JS.md) <font color=green>已完成</font>  
 AST.md [AST.md](./随记/AST.md) <font color=green>已完成</font>  
 漫谈性能优化.md [漫谈性能优化.md](./随记/漫谈性能优化.md) <font color=green>已完成</font>  
+JSBridge.md [JSBridge.md](./随记/JSBridge.md) <font color=green>已完成</font>   
 
 ### 基础
 
@@ -156,3 +157,5 @@ ESM [ESM.md](./模块化/ESM.md) <font color=green>已完成</font>
 ### 性能优化
 
 指纹ID [指纹ID.md](./性能优化/指纹ID.md) <font color=green>已完成</font>  
+
+性能指标 [性能指标.md](./性能优化/性能指标.md) <font color=green>已完成</font>  
