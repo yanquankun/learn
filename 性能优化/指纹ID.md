@@ -72,3 +72,7 @@ export const getFingerprintId = (content: string, options?: FingerprintOptions) 
 
 1. 侵犯用户隐私性
 2. 同一用户，在不同浏览器或不同端使用前端功能时，生成的指纹ID也不一样，无法做到关联分析两个指纹ID所对应的日志
+
+---
+
+附送 [前端全链路SDK](https://github.com/sankyutang/fontend-trace-geekbang-course/blob/main/trace-sdk/README.md)
