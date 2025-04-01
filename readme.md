@@ -150,3 +150,9 @@ commonJs [commonJs.md](./模块化/commonJs.md) <font color=green>已完成</fon
 AMD&CMD [AMD&CMD.md](./模块化/AMD&CMD.md) <font color=green>已完成</font>  
 
 ESM [ESM.md](./模块化/ESM.md) <font color=green>已完成</font>  
+
+
+
+### 性能优化
+
+指纹ID [指纹ID.md](./性能优化/指纹ID.md) <font color=green>已完成</font>  
