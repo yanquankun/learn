@@ -161,3 +161,5 @@ ESM [ESM.md](./模块化/ESM.md) <font color=green>已完成</font>
 性能指标 [性能指标.md](./性能优化/性能指标.md) <font color=green>已完成</font>  
 
 性能指标收集 [性能指标收集.md](./性能优化/性能指标收集.md) <font color=green>已完成</font>  
+
+资源异常监控 [资源异常监控.md](./性能优化/资源异常监控.md) <font color=green>已完成</font>  
