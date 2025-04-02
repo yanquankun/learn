@@ -159,3 +159,5 @@ ESM [ESM.md](./模块化/ESM.md) <font color=green>已完成</font>
 指纹ID [指纹ID.md](./性能优化/指纹ID.md) <font color=green>已完成</font>  
 
 性能指标 [性能指标.md](./性能优化/性能指标.md) <font color=green>已完成</font>  
+
+性能指标收集 [性能指标收集.md](./性能优化/性能指标收集.md) <font color=green>已完成</font>  
