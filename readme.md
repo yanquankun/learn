@@ -148,11 +148,12 @@ commonJs [commonJs.md](./模块化/commonJs.md) <font color=green>已完成</fon
 AMD&CMD [AMD&CMD.md](./模块化/AMD&CMD.md) <font color=green>已完成</font>  
 ESM [ESM.md](./模块化/ESM.md) <font color=green>已完成</font>
 
-### 性能优化
+### 稳定性建设
 
-指纹ID [指纹ID.md](./性能优化/指纹ID.md) <font color=green>已完成</font>  
-性能指标 [性能指标.md](./性能优化/性能指标.md) <font color=green>已完成</font>  
-性能指标收集 [性能指标收集.md](./性能优化/性能指标收集.md) <font color=green>已完成</font>  
-资源异常监控 [资源异常监控.md](./性能优化/资源异常监控.md) <font color=green>已完成</font>  
-埋点上报 [埋点上报.md](./性能优化/埋点上报.md) <font color=green>已完成</font>  
-渲染布局优化 [渲染布局优化.md](./性能优化/渲染布局优化.md) <font color=green>已完成</font>  
+指纹ID [指纹ID.md](./稳定性建设/指纹ID.md) <font color=green>已完成</font>  
+性能指标 [性能指标.md](./稳定性建设/性能指标.md) <font color=green>已完成</font>  
+性能指标收集 [性能指标收集.md](./稳定性建设/性能指标收集.md) <font color=green>已完成</font>  
+资源异常监控 [资源异常监控.md](./稳定性建设/资源异常监控.md) <font color=green>已完成</font>  
+埋点上报 [埋点上报.md](./稳定性建设/埋点上报.md) <font color=green>已完成</font>  
+渲染布局优化 [渲染布局优化.md](./稳定性建设/渲染布局优化.md) <font color=green>已完成</font>  
+字体优化 [字体优化.md](./稳定性建设/字体优化.md) <font color=green>已完成</font>  
