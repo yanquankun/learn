@@ -16,12 +16,19 @@ var search = function (nums, target) {
     let left = 0,
       right = list.length - 1;
     while (left < right) {
+      // 二分法查找（效率上看，二分法查找更高）
       const mid = Math.floor((left + right) / 2);
       if (list[mid] > list[right]) {
         left = mid + 1;
       } else {
         right = mid;
       }
+      // // 双指针查找
+      // if (list[left] < list[right]) {
+      //   right--;
+      // } else {
+      //   left++;
+      // }
     }
     return left;
   };
