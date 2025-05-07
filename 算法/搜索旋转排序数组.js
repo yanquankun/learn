@@ -23,7 +23,7 @@ var search = function (nums, target) {
       } else {
         right = mid;
       }
-      // // 双指针查找
+      // 双指针查找
       // if (list[left] < list[right]) {
       //   right--;
       // } else {
