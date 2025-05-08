@@ -11,7 +11,7 @@ AI Agent是一种能够**感知环境、自主决策并执行动作**的智能�
 
 ### AI Agent的组成部分
 
-![image-20250507200017385](https://oss.yanquankun.cn/oss-cdn/image-20250507200017385.png!watermark)
+![image-20250508111810303](https://oss.yanquankun.cn/oss-cdn/image-20250508111810303.png!watermark)
 
 #### 核心组件
 
@@ -238,6 +238,6 @@ Agent：[分析考试要求、评估当前水平、设计阶段性目标、生�
 - **`AIGC`**：餐厅的创意厨师，能根据顾客的口味和要求，创造出各种美味的菜品，还能设计出好看的菜单
 - **`Agent`**：餐厅的服务员，能感知顾客的需求，主动提供服务，从接待到点餐，从上菜到结账，全程自主完成
 
----  
+---
 
 内容来源于 [AI时代，一文彻底搞懂天天被提到的Agent是什么？](https://mp.weixin.qq.com/s/vwibfklcdg-thDdfR9-4wg)
