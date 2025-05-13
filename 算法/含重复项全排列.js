@@ -62,4 +62,3 @@ var permuteUnique = function (nums) {
 //====== 测试区域开始 ======
 console.log(permuteUnique([3, 3, 0, 3])); // [ [ 3, 3, 0, 3 ], [ 3, 3, 3, 0 ], [ 3, 0, 3, 3 ], [ 0, 3, 3, 3 ]]
 //====== 测试区域结束 ======
-// @lc code=end
