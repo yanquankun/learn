@@ -72,6 +72,7 @@ Z 字形变换[Z 字形变换.js](./算法/Z字形变换.js) <font color=green>�
 全排列[全排列.js](./算法/全排列.js) <font color=green>已完成</font>  
 搜索旋转排序数组[搜索旋转排序数组.js](./算法/搜索旋转排序数组.js) <font color=green>已完成</font>  
 字符串相乘[字符串相乘.js](./算法/字符串相乘.js) <font color=green>已完成</font>  
+含重复项全排列[含重复项全排列.js](./算法/含重复项全排列.js) <font color=green>已完成</font>  
 
 ---
 
