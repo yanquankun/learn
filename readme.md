@@ -165,4 +165,5 @@ ESM [ESM.md](./模块化/ESM.md) <font color=green>已完成</font>
 渲染布局优化 [渲染布局优化.md](./稳定性建设/渲染布局优化.md) <font color=green>已完成</font>  
 字体优化 [字体优化.md](./稳定性建设/字体优化.md) <font color=green>已完成</font>  
 LCP标记原理 [LCP标记原理.md](./稳定性建设/LCP标记原理.md) <font color=green>已完成</font>  
+大体积图片加载优化 [大体积图片加载优化.md](./稳定性建设/大体积图片加载优化.md) <font color=green>已完成</font>  
 
