@@ -76,6 +76,7 @@ Z 字形变换[Z 字形变换.js](./算法/Z字形变换.js) <font color=green>�
 子集[子集.js](./算法/子集.js) <font color=green>已完成</font>  
 旋转K次链表[旋转K次链表.js](./算法/旋转K次链表.js) <font color=green>已完成</font>  
 链表两数相加[链表两数相加.js](./算法/链表两数相加.js) <font color=green>已完成</font>  
+跳跃游戏[跳跃游戏.js](./算法/跳跃游戏.js) <font color=green>已完成</font>  
 
 ---
 
