@@ -6,8 +6,6 @@
 // 所有文件都上传完成后，uploadFiles返回一个Promise，resolve时返回每个文件的上传结果（按原顺序）。
 // 错误处理：某个文件上传失败时，该文件对应结果为Error对象，但不影响其它文件的上传。
 
-const { fi } = require("element-plus/lib/locale/index.js");
-
 // 模拟异步上传接口，随机1-2秒resolve或reject
 function upload(file) {
   return new Promise((resolve, reject) => {
