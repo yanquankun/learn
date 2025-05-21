@@ -88,5 +88,12 @@ function uploadFiles(files, limit) {
 //====== 测试区域开始 ======
 uploadFiles(files, limit).then((res) => {
   console.log(res);
+  // [
+  //   '上传成功: a.png',
+  //   '上传成功: b.jpg',
+  //   '上传成功: c.gif',
+  //   '上传成功: d.jpeg',
+  //   '上传成功: e.webp'
+  // ]
 });
 //====== 测试区域结束 ======
