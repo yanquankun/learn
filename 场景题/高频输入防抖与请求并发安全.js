@@ -5,8 +5,6 @@
  * 2.任意时刻，只有最后一次输入对应的请求结果会被 onResult 回调（即防止并发返回乱序导致的脏数据）。
  */
 
-const { de } = require("element-plus/es/locales.mjs");
-
 function searchAPI(keyword) {
   return new Promise((resolve) => {
     setTimeout(() => {
