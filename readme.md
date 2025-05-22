@@ -77,7 +77,8 @@ Z 字形变换[Z 字形变换.js](./算法/Z字形变换.js) <font color=green>�
 旋转 K 次链表[旋转 K 次链表.js](./算法/旋转K次链表.js) <font color=green>已完成</font>  
 链表两数相加[链表两数相加.js](./算法/链表两数相加.js) <font color=green>已完成</font>  
 跳跃游戏[跳跃游戏.js](./算法/跳跃游戏.js) <font color=green>已完成</font>  
-N 数内 K 个数组合[N 数内 K 个数组合.js](./算法/N数内K个数组合.js) <font color=green>已完成</font>
+N数内K个数组合[N数内K个数组合.js](./算法/N数内K个数组合.js) <font color=green>已完成</font>  
+原地删除数组中重复项[原地删除数组中重复项.js](./算法/原地删除数组中重复项.js) <font color=green>已完成</font>  
 
 ---
 
