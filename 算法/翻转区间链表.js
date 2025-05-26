@@ -14,6 +14,12 @@ function ListNode(val, next) {
 // 方案一是通过双指针方式翻转指定区间的链表
 // 优点：空间复杂度低，时间复杂度 O(n)
 // 缺点：代码逻辑相对复杂
+// 思路：
+// 1. 先找到待翻转链表的前一个节点 pre 和后一个节点 end
+// 2. 截取待翻转链表，断开前后链表，这样可以截取待翻转链表
+// 3. 翻转待翻转链表
+// 4. 连接翻转前的链表和翻转后的链表
+// 5. 返回新的链表头
 var reverseBetween = function (head, left, right) {
   if (!head.next || left === right) return head;
 
