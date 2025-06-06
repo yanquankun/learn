@@ -105,7 +105,8 @@ ELK.md [ELK.md](./随记/ELK.md) <font color=green>已完成</font>
 AST.md [AST.md](./随记/AST.md) <font color=green>已完成</font>  
 漫谈性能优化.md [漫谈性能优化.md](./随记/漫谈性能优化.md) <font color=green>已完成</font>  
 JSBridge.md [JSBridge.md](./随记/JSBridge.md) <font color=green>已完成</font>  
-agent 到底是什么.md [agent 到底是什么.md](./随记/agent到底是什么.md) <font color=green>已完成</font>
+agent到底是什么.md [agent到底是什么.md](./随记/agent到底是什么.md) <font color=green>已完成</font>  
+前端安全风险与防护实践.md [前端安全风险与防护实践.md](./随记/前端安全风险与防护实践.md) <font color=green>已完成</font>  
 
 ### 基础
 
