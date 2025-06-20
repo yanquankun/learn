@@ -180,3 +180,8 @@ LCP 标记原理 [LCP 标记原理.md](./稳定性建设/LCP标记原理.md) <fo
 图片批量上传并发控制 [图片批量上传并发控制.js](./场景题/图片批量上传并发控制.js) <font color=green>已完成</font>  
 高频输入防抖与请求并发安全 [高频输入防抖与请求并发安全.js](./场景题/高频输入防抖与请求并发安全.js) <font color=green>已完成</font>  
 带缓存的异步输入建议 [带缓存的异步输入建议.js](./场景题/带缓存的异步输入建议.js) <font color=green>已完成</font>  
+
+### pinia解析
+
+pinia源码调试 [pinia源码调试.md](./pinia解析/pinia源码调试.md) <font color=green>已完成</font>  
+
