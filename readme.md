@@ -113,7 +113,8 @@ agent到底是什么.md [agent到底是什么.md](./随记/agent到底是什么.
 模块化.md [ELK.md](./基础/模块化.md) <font color=green>已完成</font>
 Math.pow.js [Math.pow.js](./基础/Math.pow.js) <font color=green>已完成</font>  
 proxy.md [ELK.md](./基础/proxy.md) <font color=green>已完成</font>  
-ObserverAPI.md [ObserverAPI.md](./基础/ObserverAPI.md) <font color=green>已完成</font>
+ObserverAPI.md [ObserverAPI.md](./基础/ObserverAPI.md) <font color=green>已完成</font>  
+装饰器.md [装饰器.md](./基础/装饰器.md) <font color=green>已完成</font>  
 
 ### 个人技术项目
 
