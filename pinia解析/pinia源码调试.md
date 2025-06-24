@@ -10,6 +10,8 @@ github地址：https://github.com/vuejs/pinia
 
 建议自己fork一份进行调试
 
+**这里我个人已经梳理了一个简单的pinia源码仓库，地址： [learnPinia](https://github.com/yanquankun/learnPinia/tree/learn) 供大家借鉴~**
+
 #### 源码结构分析
 
 先看下整个pinia项目的目录结构以及分工
