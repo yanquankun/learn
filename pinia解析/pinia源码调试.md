@@ -1,20 +1,20 @@
-*我们在使用vue3的时候，对于数据共享，基本会想到vuex和pinia，但vue3中，更推荐的是pinia，什么是pinia呢？可以借用vuejs官方文档中的内容：*
+_我们在使用 vue3 的时候，对于数据共享，基本会想到 vuex 和 pinia，但 vue3 中，更推荐的是 pinia，什么是 pinia 呢？可以借用 vuejs 官方文档中的内容：_
 
 ![image-20250619175851399](https://oss.yanquankun.cn/oss-cdn/image-20250619175851399.png!watermark)
 
-**或许我们会对vue中的状态管理产生一些疑问❓它是如何进行的数据共享？其内部的一些方法是如何实现的❓我们可以通过源码进行一窥究竟**
+**或许我们会对 vue 中的状态管理产生一些疑问 ❓ 它是如何进行的数据共享？其内部的一些方法是如何实现的 ❓ 我们可以通过源码进行一窥究竟**
 
 #### 源码下载
 
-github地址：https://github.com/vuejs/pinia
+github 地址：https://github.com/vuejs/pinia
 
-建议自己fork一份进行调试
+建议自己 fork 一份进行调试
 
-**这里我个人已经梳理了一个简单的pinia源码仓库，地址： [learnPinia](https://github.com/yanquankun/learnPinia/tree/learn) 供大家借鉴~**
+**这里我个人已经梳理了一个简单的 pinia 源码仓库，地址： [learnPinia](https://github.com/yanquankun/learnPinia/tree/learn) 供大家借鉴~**
 
 #### 源码结构分析
 
-先看下整个pinia项目的目录结构以及分工
+先看下整个 pinia 项目的目录结构以及分工
 
 ```javascript
 pinia/
@@ -88,9 +88,9 @@ pinia/
 └── vitest.workspace.js         # Vitest 工作区配置文件
 ```
 
-*可以看到有很多子包，但我们不需要挨个解读和学习，重点将放在package/pinia、package/playground这两个包上，pinia包则是它的具体实现源码，playground包则是我们调试的demo*
+_可以看到有很多子包，但我们不需要挨个解读和学习，重点将放在 package/pinia、package/playground 这两个包上，pinia 包则是它的具体实现源码，playground 包则是我们调试的 demo_
 
-下面给出pinia包的目录结构介绍
+下面给出 pinia 包的目录结构介绍
 
 ```javascript
 packages/pinia/
@@ -128,18 +128,18 @@ packages/pinia/
 #### 源码运行
 
 ```javascript
-// 通过如下脚本，可以开启playground项目的运行  
+// 通过如下脚本，可以开启playground项目的运行
 "play": "pnpm run -r play",
 ```
 
-*一个成熟的库，必然会兼容不同的模块化方式，我们在不同场景下，必然希望可以自动进行模块化引入，那么pinia是如何做的呢❓答案是在package.json中增加不同模块化和环境对应配置即可，那么根据node的引用策略，则会注入对应的入口文件，下面我们解析下pinia bundle的package.json中的一些配置*
+_一个成熟的库，必然会兼容不同的模块化方式，我们在不同场景下，必然希望可以自动进行模块化引入，那么 pinia 是如何做的呢 ❓ 答案是在 package.json 中增加不同模块化和环境对应配置即可，那么根据 node 的引用策略，则会注入对应的入口文件，下面我们解析下 pinia bundle 的 package.json 中的一些配置_
 
 ```json
 {
-  
+
   "main": "index.cjs", // node环境默认使用该入口
   "module": "dist/pinia.mjs", // esm入口
-  "unpkg": "dist/pinia.iife.js", // cdn平台使用的入口，如果没有这个字段，unpkg 默认加载 main 或 module 字段指定的文件，通常是 CJS 或 ESM 格式，不适合浏览器直接用 <script> 标签引用 
+  "unpkg": "dist/pinia.iife.js", // cdn平台使用的入口，如果没有这个字段，unpkg 默认加载 main 或 module 字段指定的文件，通常是 CJS 或 ESM 格式，不适合浏览器直接用 <script> 标签引用
   "jsdelivr": "dist/pinia.iife.js", // cdn平台使用的入口，如果没有这个字段，unpkg 默认加载 main 或 module 字段指定的文件，通常是 CJS 或 ESM 格式，不适合浏览器直接用 <script> 标签引用
   "exports": {
     ".": { // 控制 `import 'pinia'` 时的行为，用来定义主入口路径
@@ -164,9 +164,9 @@ packages/pinia/
 }
 ```
 
-ok，我们已了解了pinia的入口引入方式，下面将在demo中配置pinia的入口地址以供我们进行源码调试。
+ok，我们已了解了 pinia 的入口引入方式，下面将在 demo 中配置 pinia 的入口地址以供我们进行源码调试。
 
-在demo中，你需要将pinia资源引用执行到所期望调试的模块，我们是期望直接在本地源码中进行调试，所以可以在vite这样配置：
+在 demo 中，你需要将 pinia 资源引用执行到所期望调试的模块，我们是期望直接在本地源码中进行调试，所以可以在 vite 这样配置：
 
 ```javascript
 resolve: {
@@ -182,7 +182,7 @@ resolve: {
 
 1. 环境准备
 
-​	 首先需要完善我们的ide的调试环境，由于playground中引用的是pinia本地包，是ts文件配置，所以我们需要配置如下的launch.json
+​ 首先需要完善我们的 ide 的调试环境，由于 playground 中引用的是 pinia 本地包，是 ts 文件配置，所以我们需要配置如下的 launch.json
 
 ```json
 {
@@ -195,11 +195,14 @@ resolve: {
       "name": "调试pinia",
       "type": "chrome",
       "request": "launch",
-      "url": "http://localhost:5173/demo-counter",
+      "url": "http://localhost:5173/",
       "webRoot": "${workspaceFolder}",
       "sourceMaps": true,
       "trace": true,
-      "skipFiles": ["<node_internals>/**"]
+      "skipFiles": ["<node_internals>/**"],
+      "sourceMapPathOverrides": {
+        "http://localhost:5173/src/*": "${workspaceFolder}/learnPinia/packages/playground/src/*",
+      }
     },
     ...
   ]
@@ -214,5 +217,5 @@ resolve: {
 3. 开启调试模式
    ![image-20250620160020922](https://oss.yanquankun.cn/oss-cdn/image-20250620160020922.png!watermark)
 
-在调试tab中，选取我们刚创建好的 `调试pinia` 选项后点击开启按钮，可以看到进入了调试模式
+在调试 tab 中，选取我们刚创建好的 `调试pinia` 选项后点击开启按钮，可以看到进入了调试模式
 ![image-20250620160158745](https://oss.yanquankun.cn/oss-cdn/image-20250620160158745.png!watermark)
