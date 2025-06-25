@@ -130,6 +130,7 @@ use(plugin) {
 最后在pinia的install方法中，进行了pinia的激活，并且把_a和_p进行了赋值
 
 ![image-20250625153000408](https://oss.yanquankun.cn/oss-cdn/image-20250625153000408.png!watermark)
+
 ![image-20250625153049553](https://oss.yanquankun.cn/oss-cdn/image-20250625153049553.png!watermark)
 
 到此应该了解了开头的问题了吧~
