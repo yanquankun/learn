@@ -120,12 +120,18 @@ use(plugin) {
 **通过上述的讲解，大家应该猜到答案了，这里我来统一解释下：**
 
 先看下通过断点调试app.use(pinia)的截图：
+
 ![image-20250625152235267](https://oss.yanquankun.cn/oss-cdn/image-20250625152235267.png!watermark)
+
 可以看到其实这里我们走到了vue源码中，这时我们再看断点的输出，可以看到这里调用了pinia的install（vue插件实现机制）方法
+
 ![image-20250625152359423](https://oss.yanquankun.cn/oss-cdn/image-20250625152359423.png!watermark)
+
 最后在pinia的install方法中，进行了pinia的激活，并且把_a和_p进行了赋值
+
 ![image-20250625153000408](https://oss.yanquankun.cn/oss-cdn/image-20250625153000408.png!watermark)
 ![image-20250625153049553](https://oss.yanquankun.cn/oss-cdn/image-20250625153049553.png!watermark)
+
 到此应该了解了开头的问题了吧~
 
 ---
