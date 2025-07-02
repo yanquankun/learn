@@ -138,4 +138,3 @@ use(plugin) {
 ---
 
 附录本文的git地址：[learnPinia/createPinia](https://github.com/yanquankun/learnPinia/blob/learn/packages/pinia/src/createPinia.ts)
-

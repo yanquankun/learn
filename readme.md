@@ -118,6 +118,7 @@ ObserverAPI.md [ObserverAPI.md](./基础/ObserverAPI.md) <font color=green>已�
 装饰器.md [装饰器.md](./基础/装饰器.md) <font color=green>已完成</font>  
 装饰器使用条件.md [装饰器使用条件.md](./基础/装饰器使用条件.md) <font color=green>已完成</font>  
 依赖注入(DI).md [依赖注入(DI).md](./基础/依赖注入(DI).md) <font color=green>已完成</font>  
+Promise执行顺序.md [Promise执行顺序.md](./基础/Promise执行顺序.md) <font color=green>已完成</font>  
 
 ### 个人技术项目
 
