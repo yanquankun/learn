@@ -110,6 +110,7 @@ agent到底是什么.md [agent到底是什么.md](./随记/agent到底是什么.
 前端安全风险与防护实践.md [前端安全风险与防护实践.md](./随记/前端安全风险与防护实践.md) <font color=green>已完成</font>  
 网页截图.md [网页截图.md](./随记/网页截图.md) <font color=green>已完成</font>  
 Node管理工具.md [Node管理工具.md](./随记/Node管理工具.md) <font color=green>已完成</font>  
+claude-code-router.md [claude-code-router.md](./随记/claude-code-router.md) <font color=green>已完成</font>  
 
 ### 基础
 
