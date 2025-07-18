@@ -276,7 +276,7 @@ MCP 说白了就是个中间帮手，能让 AI 用各种外部工具。就像你
 
 用个流程图给大家看看：
 
-![image.png](https://raw.githubusercontent.com/yanquankun/note-gen-image-sync/master/e02d5d37-1a41-4959-96a0-8e9b18d19d7c.png)
+![image.png](https://oss.yanquankun.cn/oss-cdn/e02d5d37-1a41-4959-96a0-8e9b18d19d7c.png!watermark)
 
 举个例子，你说 “帮我弄个显示北京明天天气的网页”：
 
