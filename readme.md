@@ -194,3 +194,7 @@ LCP 标记原理 [LCP 标记原理.md](./稳定性建设/LCP标记原理.md) <fo
 
 pinia源码调试 [pinia源码调试.md](./pinia解析/pinia源码调试.md) <font color=green>已完成</font>  
 createPinia [createPinia.md](./pinia解析/createPinia.md) <font color=green>已完成</font>  
+
+### AI
+
+AI [python调用huggingface大模型.md](./AI/python调用huggingface大模型.md) <font color=green>已完成</font>  
