@@ -57,4 +57,3 @@ console.log(convert("PAYPALISHIRING", 3)); // PAHNAPLSIIGYIR
 console.log(convert("PAYPALISHIRING", 4)); // PINALSIGYAHRPI
 console.log(convert("AB", 1)); // AB
 //====== 测试区域结束 ======
-// https://local.platform.yanquankun.cn/blogs/home?name=Z%E5%AD%97%E5%BD%A2%E5%8F%98%E6%8D%A2#NWJmOGIxYmQ4ZTFjNjEwM2YzOTE3NGVjNDQ4MTg0MTg5ZDY3OTIwMw==
