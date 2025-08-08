@@ -156,7 +156,8 @@ React各版本Hooks详解与新特性实例 [React各版本Hooks详解与新特�
 虚拟 DOM 和 render 函数 [虚拟 DOM 和 render 函数.md](./Vue/虚拟DOM和render函数.md) <font color=green>已完成</font>  
 computed [computed.md](./Vue/computed.md) <font color=green>已完成</font>  
 diff 算法 [diff 算法.md](./Vue/diff算法.md) <font color=green>已完成</font>  
-vue 问题汇总 [vue 问题汇总.md](./Vue/vue问题汇总.md) <font color=green>已完成</font>
+vue 问题汇总 [vue 问题汇总.md](./Vue/vue问题汇总.md) <font color=green>已完成</font>  
+VaporMode [VaporMode.md](./Vue/VaporMode.md) <font color=green>已完成</font>  
 
 ### 微信小程序
 
