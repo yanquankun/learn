@@ -147,8 +147,6 @@ document.getElementById('openCameraButton').addEventListener('click', function()
 });
 ```
 
-
-
 **android**
 
 1. 消息处理
@@ -239,8 +237,6 @@ document.getElementById('openCameraButton').addEventListener('click', function()
    }
    ```
 
-   
-
 **ios**
 
 1. 消息处理
@@ -325,8 +321,6 @@ document.getElementById('openCameraButton').addEventListener('click', function()
    
    @end
    ```
-
-   
 
 2. 调用摄像头
 

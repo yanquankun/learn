@@ -94,8 +94,6 @@ from transformers import Trainer, TrainingArguments
 | `tiiuae/falcon-rw-1b`              | HF   | 适合部署到轻量云环境      |
 | `gpt2`                             | HF   | 标准 GPT 模型，教学经典   |
 
-
-
 ------
 
 ## 六、使用 PyCharm 本地调试 DialoGPT 模型全过程

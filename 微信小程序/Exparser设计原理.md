@@ -7,8 +7,6 @@
 - ShadowDOM思想
 - Exparser原理
 
-
-
 ## 什么是WebComponent?
 
 `WebComponent` 汉语直译过来第一感觉是web组件的意思，但是它只是一套规则、一套API。你可以通过这些API创建自定义的新的组件，并且组件是可以重复使用的，封装好的组件可以在网页和Web应用程序中进行使用。
@@ -36,8 +34,6 @@
 - Shadow DOM规范
 
 > MDN：https://developer.mozilla.org/zh-CN/docs/Web/Web_Components
-
-
 
 ### Custom Element
 
@@ -108,11 +104,7 @@ window.customElements.define("custom-component", CustomComponent);
 
 其中`window.customElement.whenDefined`方法监听的元素状态为上述讲解的四种元素状态中的： `failed`升级失败和`custom`升级成功。
 
-
-
 这里有个问题，我们demo里的dom结构比较简单，所以我们通过`document.createElement`、`appendChild`方法进行构建还不算复杂，如果dom结构很复杂的组件怎么办呢？一顿使用createElement也不是个办法。这个时候我们就要引入`<template>`标记了。
-
-
 
 ### Template
 
@@ -146,8 +138,6 @@ window.customElements.define("custom-component", CustomComponent);
 
 1. 这里因为是demo演示所以把`<template>`标签写在了一起，其实可以用脚本把`<template>`注入网页。这样的话，JavaScript 脚本跟`<template>`就能封装成一个 JS 文件，成为独立的组件文件。网页只要加载这个脚本，就能使用`<custom-component>`组件。
 2. `<template>`标签内的节点进行操作必须通过`template.content`返回的节点来操作。因为这里获取的`template`并不是一个正常的DOM结构，在控制台打印一下`template.content`得到的结果是`#document-fragment`。它其实是`DocumentFragment`节点，里面才是真正的结构。而且这个模板还要留给其他实例使用，所以不能直接移动它的子元素
-
-
 
 在 Vue 和 React 中使用组件时，我们经常涉及到 props 的传递，例如：
 
@@ -197,8 +187,6 @@ window.customElements.define("custom-component", CustomComponent);
 ```
 
 你看，这样之后就可以传入参数了，但是我们平常使用组件的时候是可以嵌套的，我们不仅仅需要参数注入的形式，还需要嵌套的children形式。继续修改自定义组件。
-
-
 
 #### slot
 
@@ -254,8 +242,6 @@ window.customElements.define("custom-component", CustomComponent);
 
 有关shadow DOM将会在后面具体进行介绍。
 
-
-
 #### 事件
 
 有了参数之后不能离开事件Event，对吧，我们想添加一个文本的点击事件。继续来改造升级。
@@ -305,8 +291,6 @@ var options = {
 var myEvent = new CustomEvent(eventname, options);
 ```
 
-
-
 ### Shadow DOM
 
 Shadow DOM 允许将隐藏的 DOM 树附加到常规的 DOM 树中——它以 shadow root 节点为起始根节点，在这个根节点的下方，可以是任意元素，和普通的 DOM 元素一样。
@@ -331,8 +315,6 @@ let myShadowDom = myCustomElem.shadowRoot;
 
 - `closed`： 那么就不可以从外部获取`Shadow DOM了`。`myCustomElem.shadowRoot` 将会返回 null
 
-
-
 ShadowDOM的概念在HTML中非常常见，举一个例子，在 HTML 中有 Video 标签
 
 ```html
@@ -356,8 +338,6 @@ ShadowDOM的概念在HTML中非常常见，举一个例子，在 HTML 中有 Vid
 ![image-20230215111304144](https://oss.yanquankun.cn/oss-cdn/2023-02-15-031304.png!watermark)
 
 因此，像img、button、input、textarea、select、radio、checkbox，video等等这些标签是不可以作为宿主的，因为它们本身内部就已经有shadowDOM了。
-
-
 
 ## Exparser框架原理
 
