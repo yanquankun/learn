@@ -63,14 +63,10 @@ App render 1
 
 不会有打印
 
-
-
 上面的这个例子实际上就涉及到了我们所提到的 React 内部的两种性能优化策略：
 
 - 在第二次打印的时候，并没有打印 child render，此时实际上是命中了 bailout 策略。命中该策略的组件的子组件会跳过 reconcile 过程，也就是说子组件不会进入 render 阶段。
 - 后面的第三次以及之后的点击，没有任何输入，说明 App、Child 都没有进入 render 阶段，此时命中的就是 eagerState 策略，这是一种发生于触发状态更新时的优化策略，如果命中了该策略，此次更新不会进入 schedule 阶段，更不会进入 render 阶段。
-
-
 
 ## eagerState 策略
 
@@ -123,8 +119,6 @@ const update = {
 }
 ```
 
-
-
 在上面的示例中，比较奇怪的是第二次点击，在第二次点击之前，num 已经为 1 了，但是父组件仍然重新渲染了一次，为什么这种情况没有命中 eagerState 策略？
 
 FiberNode 分为 current 和 wip 两种。
@@ -141,8 +135,6 @@ if (
 ```
 
 对于第一次更新，当 beginWork 开始前，current.lanes 和 wip.lanes 都不是 NoLanes。当 beginWork 执行后， wip.lanes 会被重置为 NoLanes，但是 current.lanes 并不会，current 和 wip 会在 commit 阶段之后才进行互换，这就是为什么第二次没有命中 eagerState 的原因。
-
-
 
 那么为什么后面的点击又命中了呢？
 
@@ -161,8 +153,6 @@ function bailoutHooks(
 ```
 
 在执行 bailoutHooks 方法的时候，最后一句会将当前 FiberNode 的 lanes 移除，因此当这一轮更新完成后，current.lanes 和 wip.lanes 就均为 NoLanes，所以在后续的点击中就会命中 eagerState 策略。
-
-
 
 ## 解答
 

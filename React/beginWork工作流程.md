@@ -126,8 +126,6 @@ function placeChild(newFiber, lastPlacedIndex, newIndex){
 - 标记 ChildDeletion，这个是代表删除操作
 - 标记 Placement，这是代表插入或者移动操作
 
-
-
 ## 解答
 
 > 题目：beginWork 中主要做一些什么工作？整体的流程是怎样的？

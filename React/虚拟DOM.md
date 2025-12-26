@@ -6,8 +6,6 @@
 
 >虚拟dom本质上就是一个普通的 JS 对象，用于描述视图的界面结构
 
-
-
 虚拟 DOM 最早是由 React 团队提出来的，因此 React 团队在对虚拟 DOM 的定义上面有绝对的话语权。
 
 >https://react.docschina.org/docs/faq-internals.html
@@ -22,16 +20,12 @@
 
 虚拟 DOM 和 JS 对象之间的关系：**前者是一种思想，后者是一种思想的具体实现。**
 
-
-
 ## 为什么需要虚拟 DOM
 
 使用虚拟 DOM 主要有两个方面的优势：
 
 - 相较于 DOM 的体积优势和速度优势
 - 多平台的渲染抽象能力
-
-
 
 **相较于 DOM 的体积优势和速度优势**
 
@@ -94,8 +88,6 @@ innerHTML 进行更新的时候，要全部重新赋值，这意味着之前创�
 | DOM 层面计算 | 销毁原来所有的 DOM 节点 | 修改必要的 DOM 节点 |
 | DOM 层面计算 | 创建对应的 DOM 节点     |                     |
 
-
-
 **多平台的渲染抽象能力**
 
 UI = f（state）这个公式进一步进行拆分可以拆分成两步：
@@ -109,8 +101,6 @@ UI = f（state）这个公式进一步进行拆分可以拆分成两步：
 - Native 宿主环境使用 ReactNative 包
 - Canvas、SVG 或者 VML（IE8）宿主环境使用 ReactArt 包
 - ReactTest 包用于渲染出 JS 对象，可以很方便地测试“不隶属于任何宿主环境的通用功能”
-
-
 
 ## React 中的虚拟DOM
 
@@ -212,8 +202,6 @@ const ReactElement = function (type, key, ref, self, source, owner, props) {
 ```
 
 在上面的代码中，最终返回的 element 对象就是我们所说的虚拟 DOM 对象。在官方文档中，官方更倾向于将这个对象称之为 React 元素。
-
-
 
 ## 解答
 

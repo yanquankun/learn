@@ -2,8 +2,6 @@
 
 > Hook是如何保存函数组件状态的？为什么不能在循环，条件或嵌套函数中调用 Hook ？
 
-
-
 ## Hook 内部介绍
 
 在 React 中，针对 Hook 有三种策略，或者说三种类型的 dispatcher：
@@ -67,8 +65,6 @@ export const ContextOnlyDispatcher: Dispatcher = {
 - update 阶段：函数组件进行状态的更新，调用的就是 updateXXX 对应的函数
 - 其他场景下（报错）：此时调用的就是 throwInvaildError
 
-
-
 当 FC 进入到 render 流程的时候，首先会判断是初次渲染还是更新：
 
 ```js
@@ -92,8 +88,6 @@ useEffect(()=>{
 ```
 
 那么此时的上下文对象指向 ContextOnlyDispatcher，最终执行的就是 throwInvalidHookError，抛出错误。
-
-
 
 接下来我们来看一下 hook 的一个数据结构
 
@@ -122,8 +116,6 @@ const hook = {
 - useCallback：对于 useCallback( callback, [...deps] )，memoizedState 保存的是 [callback、[...deps]] 数据
 
 有些 Hook 不需要 memoizedState 保存自身数据，比如 useContext。
-
-
 
 ## Hook 的一个执行流程
 
@@ -170,8 +162,6 @@ function finishRenderingHooks(current, workInProgress) {
 renderWithHooks 会被每次函数组件触发时（mount、update），该方法就会清空 workInProgress 的 memoizedState 以及 updateQueue，接下来判断该组件究竟是初始化还是更新，为 ReactCurrentDispatcher.current 赋值不同的上下文对象，之后调用
 
 Component 方法来执行函数组件，组件里面所书写的 hook 就会依次执行。
-
-
 
 接下来我们来以 useState 为例看一下整个 hook 的执行流程：
 
@@ -246,8 +236,6 @@ function mountWorkInProgressHook() {
   return workInProgressHook;
 }
 ```
-
-
 
 假设现在我们有如下的一个组件：
 
@@ -415,8 +403,6 @@ function App({ showNumber }) {
 第二次复用的时候，发现 hook 的类型不同， useState !==useRef，那么就会直接报错。因此开发的时候一定要注意 hook 顺序的一致性。
 
 <img src="https://oss.yanquankun.cn/oss-cdn/2023-03-03-031320.jpg!watermark" alt="16717800284171" style="zoom: 33%;" />
-
-
 
 ## 解答
 

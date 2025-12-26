@@ -2,8 +2,6 @@
 
 Scheduler 的核心源码位于 packages/scheduler/src/forks/Scheduler.js
 
-
-
 ## **scheduleCallback**
 
 该函数的主要目的就是用调度任务，该方法的分析如下：
@@ -143,8 +141,6 @@ function unstable_scheduleCallback(priorityLevel, callback, options) {
   - 普通任务：requestHostCallback(flushWork)
   - 延时任务：requestHostTimeout(handleTimeout, startTime - currentTime);
 
-
-
 ## requestHostCallback 和 schedulePerformWorkUntilDeadline
 
 ```js
@@ -187,8 +183,6 @@ if (typeof localSetImmediate === 'function') {
 
 - requestHostCallback 主要就是调用了 schedulePerformWorkUntilDeadline
 - schedulePerformWorkUntilDeadline 一开始是 undefiend，根据不同的环境选择不同的生成宏任务的方式
-
-
 
 ## performWorkUntilDeadline
 
@@ -242,8 +236,6 @@ const performWorkUntilDeadline = () => {
 ```
 
 - 该方法实际上主要就是在调用 scheduledHostCallback（flushWork），调用之后，返回一个布尔值，根据这个布尔值来判断是否还有剩余的任务，如果还有，就是用 messageChannel 进行一个宏任务的包装，放入到任务队列里面
-
-
 
 ## flushWork 和 workLoop
 
@@ -390,8 +382,6 @@ if (
 - shouldYieldToHost 任务是否应该暂停，归还主线程
 - 如果进入 if，说明因为某些原因不能再执行任务，需要立即归还主线程，那么我们就跳出 while
 
-
-
 ## shouldYieldToHost
 
 ```js
@@ -438,8 +428,6 @@ function shouldYieldToHost() {
 
 - 首先计算 timeElapsed，然后判断是否超时，没有的话就返回 false，表示不需要归还，否则就返回 true，表示需要归还。
 - frameInterval 默认设置的是 5ms
-
-
 
 ## advanceTimers
 

@@ -13,8 +13,6 @@
 
 <img src="https://oss.yanquankun.cn/oss-cdn/2023-03-01-060445.png!watermark" alt="image-20230301140444822" style="zoom:50%;" />
 
-
-
 ## mount 阶段
 
 在 mount 流程中，首先会通过 createInstance 创建 FiberNode 所对应的 DOM 元素：
@@ -92,8 +90,6 @@ function World(){
 
 在上面的代码中，如果从 FiberNode 的角度来看，Hello 和 World 是同级的，但是如果从 DOM 元素的角度来看，Hello 就和 span 是同级别的。因此从 FiberNode 中查找同级的 DOM 元素的时候，经常会涉及到跨 FiberNode 层级进行查找。
 
-
-
 接下来 completeWork 会执行 finalizeInitialChildren 方法完成属性的初始化，主要包含以下几类属性：
 
 - styles，对应的方法为 setValueForStyles 方法
@@ -102,11 +98,7 @@ function World(){
 - 不会再在 DOM 中冒泡的事件，包括 cancel、close、invalid、load、scroll、toggle，对应的是 listenToNonDelegatedEvent 方法
 - 其他属性，对应 setValueForProperty 方法
 
-
-
 该方法执行完毕后，最后进行 flags 的冒泡。
-
-
 
 总结一下，completeWork 在 mount 阶段执行的工作流程如下：
 
@@ -116,8 +108,6 @@ function World(){
 - 执行 appendChildren 将下一级 DOM 元素挂载在上一步所创建的 DOM 元素下
 - 执行 finalizeInitialChildren 完成属性初始化
 - 执行 bubbleProperties 完成 flags 冒泡
-
-
 
 ## update 阶段
 
@@ -209,8 +199,6 @@ export default ()=>{
 workInProgress.flags |= Update;
 ```
 
-
-
 ## flags冒泡
 
 我们知道，当整个 Reconciler 完成工作后，会得到一颗完整的 wipFiberTree，这颗 wipFiberTree 是由一颗一颗 FiberNode 组成的，这些 FiberNode 中有一些标记了 flags，有一些没有标记，现在就存在一个问题，我们如何高效的找到散落在这颗 wipFiberTree 中有 flag 标记的 FiberNode，那么此时就可以通过 flags 冒泡。
@@ -231,8 +219,6 @@ completeWork.subtreeFlags |= subtreeFlags;
 这样的收集方式，有一个好处，在渲染阶段，通过任意一级的 FiberNode.subtreeFlags 都可以快速确定该 FiberNode 以及子树是否存在副作用从而判断是否需要执行和副作用相关的操作。
 
 早期的时候，React 中实际上并没有使用 subtreeFlags 来通过 flags 冒泡收集副作用，而是使用的 effect list（链表）来收集的副作用，使用 subtreeFlags 有一个好处，就是能确定某一个 FiberNode 它的子树的副作用。
-
-
 
 ## 解答
 

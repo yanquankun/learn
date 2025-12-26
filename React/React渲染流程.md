@@ -78,13 +78,9 @@ Scheduler 在浏览器的原生 API 中实际上是有类似的实现的，这�
 
 根据研究报告表明，用户操作之后，100ms以内的响应给用户的感觉都是瞬间发生，也就是说不会感受到延迟感，因此将空闲时间设置为 50，浏览器依然还剩下 50ms 可以处理用户的操作响应，不会让用户感到延迟。
 
-
-
 虽然浏览器有类似的 API，但是 React 团队并没有使用该 API，因为该 API 存在兼容性问题。因此 React 团队自己实现了一套这样的机制，这个就是调度器 Scheduler。
 
 后期 React 团队打算单独发行这个 Scheduler，这意味着调度器不仅仅只能在 React 中使用，凡是有涉及到任务调度需求的项目都可以使用 Scheduler。
-
-
 
 ## 协调器
 
@@ -123,14 +119,10 @@ performUnitOfWork 方法会创建下一个 FiberNode，并且还会将已创建�
 
 上面两个方法唯一的区别就是是否调用了 shouldYield方法，该方法表明了是否可以中断。
 
-
-
 performUnitOfWork在创建下一个 FiberNode 的时候，整体上的工作流程可以分为两大块：
 
 - 递阶段
 - 归阶段
-
-
 
 **递阶段**
 
@@ -149,8 +141,6 @@ performUnitOfWork在创建下一个 FiberNode 的时候，整体上的工作流�
 ```js
 LiFiber.return = UlFiber;
 ```
-
-
 
 - 下一级有多个元素，这是 beginWork 方法会依次创建所有的子 FiberNode 并且通过 sibling 连接到一起，每个子 FiberNode 也会和 workInProgress 连接
 
@@ -177,8 +167,6 @@ Li2Fiber.return = UlFiber;
 
 由于采用的是深度优先的原则，因此无法再往下走的时候，会进入到归阶段。
 
-
-
 **归阶段**
 
 归阶段会调用 completeWork 方法来处理 FiberNode，做一些副作用的收集。
@@ -202,8 +190,6 @@ function performUnitOfWork(fiberNode){
 
 ![image-20230224111517826](https://oss.yanquankun.cn/oss-cdn/2023-02-24-031518.png!watermark)
 
-
-
 ## 渲染器
 
 Renderer 工作的阶段被称之为 commit 阶段。该阶段会将各种副作用 commit 到宿主环境的 UI 中。
@@ -217,10 +203,6 @@ Renderer 工作的阶段被称之为 commit 阶段。该阶段会将各种副作
 - Layout 阶段
 
 <img src="https://oss.yanquankun.cn/oss-cdn/2023-03-02-090354.png!watermark" alt="image-20230302170353345" style="zoom:50%;" />
-
-
-
-
 
 ## 解答
 

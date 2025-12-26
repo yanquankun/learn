@@ -2,8 +2,6 @@
 
 > 谈一谈你对 React 中 Fiber 的理解以及什么是 Fiber 双缓冲？
 
-
-
 ## 对 Fiber 的理解
 
 实际上，我们可以从三个维度来理解 Fiber：
@@ -11,8 +9,6 @@
 - 是一种架构，称之为 Fiber 架构
 - 是一种数据类型
 - 动态的工作单元
-
-
 
 **是一种架构，称之为 Fiber 架构**
 
@@ -32,8 +28,6 @@ function FiberNode(tag, pendingProps, key, mode) {
 }
 ```
 
-
-
 **是一种数据类型**
 
 Fiber 本质上也是一个对象，是在之前 React 元素基础上的一种升级版本。每个 FiberNode 对象里面会包含 React 元素的类型、周围链接的FiberNode以及 DOM 相关信息：
@@ -50,8 +44,6 @@ function FiberNode(tag, pendingProps, key, mode) {
   // ...
 }
 ```
-
-
 
 **动态的工作单元**
 
@@ -73,13 +65,9 @@ function FiberNode(tag, pendingProps, key, mode) {
 }
 ```
 
-
-
 > 为什么指向父 FiberNode 的字段叫做 return 而非 parent？
 >
 > 因为作为一个动态的工作单元，return 指代的是 FiberNode 执行完 completeWork 后返回的下一个 FiberNode，这里会有一个返回的动作，因此通过 return 来指代父 FiberNode
-
-
 
 ## Fiber 双缓冲
 
@@ -107,8 +95,6 @@ workInProgress.alternate = current;
 ```
 
 接下来我们从首次渲染（mount）和更新（update）这两个阶段来看一下 FiberTree 的形成以及双缓存机制：
-
-
 
 **mount 阶段**
 
@@ -153,8 +139,6 @@ ReactDOM.createRoot(rootElement).render(<App />);
 
 <img src="https://oss.yanquankun.cn/oss-cdn/2023-02-24-072953.png!watermark" alt="image-20230224152953358" style="zoom:50%;" />
 
-
-
 **update 阶段**
 
 点击 p 元素，会触发更新，这一操作就会开启 update 流程，此时就会生成一颗新的 wip Fiber Tree，流程和之前是一样的
@@ -177,8 +161,6 @@ ReactDOM.createRoot(rootElement2).render(<App2 />);                             
 ```
 
 在上面的代码中，我们创建了 3 个应用，此时就会存在 3 个 FiberRootNode，以及对应最多 6 棵 Fiber Tree 树。
-
-
 
 ## 解析
 

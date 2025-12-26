@@ -19,8 +19,6 @@
 
 从上图可以看出，bailout 是否命中发生在 update 阶段，在进入 beginWork 后，会有两次是否命中 bailout 策略的相关判断
 
-
-
 ## 第一次判断
 
 第一次判断发生在确定了是 update 后，立马就会进行是否能够复用的判断：
@@ -30,8 +28,6 @@
 - FiberNode.type 没有变化
 - 当前 FiberNode 没有更新发生
 
-
-
 **oldProps 全等于 newProps**
 
 注意这里是做的一个全等比较。组件在 render 之后，拿到的是一个 React 元素，会针对 React 元素的 props 进行一个全等比较。但是由于每一次组件 render 的时候，会生成一个全新的对象引用，因此 oldProps 和 newProps 并不会全等，此时是没有办法命中 bailout。
@@ -40,13 +36,9 @@
 
 > 备注：视频中这里讲解有误，不是针对 props 属性每一项进行比较，而是针对 props 对象进行全等比较。上面的笔记内容已修改。
 
-
-
 **Legacy Context 没有变化**
 
 Legacy Context指的是旧的 ContextAPI，ContextAPI重构过一次，之所以重构，就是和 bailout策略相关。
-
-
 
 **FiberNode.type 没有变化**
 
@@ -62,8 +54,6 @@ function App(){
 在上面的代码中，我们在 App 组件中定义了 Child 组件，那么 App 每次 render 之后都会创建新的 Child 的引用，因此对于 Child 来讲，FiberNode.type 始终是变化的，无法命中 bailout 策略。
 
 因此不要在组件内部再定义组件，以免无法命中优化策略。
-
-
 
 **当前 FiberNode 没有更新发生**
 
@@ -86,8 +76,6 @@ function checkScheduledUpdateOrContext(current, renderLanes) {
   return false;
 }
 ```
-
-
 
 **当以上条件都满足的时候**，会命中 bailout 策略，命中该策略后，会执行 bailoutOnAlreadyFinishedWork 方法，在该方法中，会进一步的判断优化程序，根据优化程度来决定是整颗子树都命中 bailout 还是复用子树的 FiberNode
 
@@ -112,8 +100,6 @@ function bailoutOnAlreadyFinishedWork(current, workInProgress, renderLanes) {
 
 这其实也解释了为什么每次 React 更新都会生成一颗完整的 FiberTree 但是性能上并不差的原因。
 
-
-
 ## 第二次判断
 
 如果第一次没有命中 bailout 策略，则会根据 tag 的不同进入不同的处理逻辑，之后还会再进行第二次的判断。
@@ -122,8 +108,6 @@ function bailoutOnAlreadyFinishedWork(current, workInProgress, renderLanes) {
 
 - 开发者使用了性能优化 API
 - 虽然有更新，但是 state 没有变化
-
-
 
 **开发者使用了性能优化 API**
 
@@ -155,8 +139,6 @@ if (!hasScheduledUpdateOrContext) {
 - ref 没有发生改变
 
 如果同时满足上面这三个条件，就会命中 bailout 策略，执行 bailoutOnAlreadyFinishedWork 方法。相较于第一次判断，第二次判断 props 采用的是浅比较进行判断，因此能够更加容易命中 bailout
-
-
 
 例如再来看一个例子，比如 ClassComponent 的优化手段经常会涉及到 PureComponent 或者 shouldComponentUpdate，这两个 API 实际上背后也是在优化命中bailout 策略的方式
 
@@ -208,8 +190,6 @@ function checkShouldComponentUpdate(
 
 通过上面的代码中我们可以看出，PureComponent 通过浅比较来决定shouldUpdate的值，而shouldUpdate的值又决定了是否能够命中 bailout 策略。
 
-
-
 **虽然有更新，但是 state 没有变化**
 
 在第一次进行判断的时候，其中有一个条件是当前的 FiberNode 没有更新发生，没有更新就意味着 state 没有改变。但是还有一种情况，那就是有更新，但是更新前后计算出来的 state 仍然没有变化，此时就也会命中 bailout 策略。
@@ -252,8 +232,6 @@ function markWorkInProgressReceivedUpdate() {
   didReceiveUpdate = true;
 }
 ```
-
-
 
 ## 解答
 
