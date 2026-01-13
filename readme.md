@@ -202,3 +202,4 @@ AI [python调用huggingface大模型.md](./AI/python调用huggingface大模型.m
 agent到底是什么.md [agent到底是什么.md](./AI/agent到底是什么.md) <font color=green>已完成</font>  
 claude-code-router.md [claude-code-router.md](./AI/claude-code-router.md) <font color=green>已完成</font>  
 Prompt和MCP.md [Prompt和MCP.md](./AI/Prompt和MCP.md) <font color=green>已完成</font>  
+代码优化.md [代码优化.md](./AI/代码优化.md) <font color=green>已完成</font>  
