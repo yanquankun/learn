@@ -59,6 +59,7 @@ Zoe · Data 📊
 
 核心组件
 
+```txt
 OpenClaw Gateway（常驻服务）
 ├── channels.feishu
 │ ├── accounts.default → OpenClaw 主账号
@@ -75,6 +76,7 @@ OpenClaw Gateway（常驻服务）
 │ └── qa / ops / data
 └── bindings
 └── feishu group oc_xxx → feishu-opc agent
+```
 
 ---
 
