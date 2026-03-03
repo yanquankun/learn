@@ -138,6 +138,7 @@ OpenClaw Gateway（常驻服务）
 
 核心逻辑：
 
+```txt
 收到任务
     ↓
 判断角色（pm/dev/ui/qa/ops/data）
@@ -147,6 +148,7 @@ sessions_send(label="dev", message="任务 + 要求用自己 accountId 发到飞
 角色处理完 → message(channel=feishu, accountId=dev, target=chat:oc_xxx)
     ↓
 角色回复 Moltbot「已发送✅」→ NO_REPLY
+```
 
 ---
 🚧 踩坑记录
@@ -207,6 +209,7 @@ sessions_send(label="dev", message="任务 + 要求用自己 accountId 发到飞
 
 
 **平台**
+
 OpenClaw + 飞书|discord | 服务器：Vultr VPS
 
 **VPS**
