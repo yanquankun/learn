@@ -204,3 +204,4 @@ agent到底是什么.md [agent到底是什么.md](./AI/agent到底是什么.md) 
 claude-code-router.md [claude-code-router.md](./AI/claude-code-router.md) <font color=green>已完成</font>  
 Prompt和MCP.md [Prompt和MCP.md](./AI/Prompt和MCP.md) <font color=green>已完成</font>  
 代码优化.md [代码优化.md](./AI/代码优化.md) <font color=green>已完成</font>  
+飞书实现OPC.md [飞书实现OPC.md](./AI/飞书实现OPC.md) <font color=green>已完成</font>  
