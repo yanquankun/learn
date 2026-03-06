@@ -191,6 +191,7 @@ LCP 标记原理 [LCP 标记原理.md](./稳定性建设/LCP标记原理.md) <fo
 高频输入防抖与请求并发安全 [高频输入防抖与请求并发安全.js](./场景题/高频输入防抖与请求并发安全.js) <font color=green>已完成</font>  
 带缓存的异步输入建议 [带缓存的异步输入建议.js](./场景题/带缓存的异步输入建议.js) <font color=green>已完成</font>  
 异步并发调度器 [异步并发调度器.js](./场景题/异步并发调度器.md) <font color=green>已完成</font>  
+并发任务调度器 [并发任务调度器.js](./场景题/并发任务调度器.md) <font color=green>已完成</font>  
 
 ### pinia解析
 
@@ -205,3 +206,4 @@ claude-code-router.md [claude-code-router.md](./AI/claude-code-router.md) <font 
 Prompt和MCP.md [Prompt和MCP.md](./AI/Prompt和MCP.md) <font color=green>已完成</font>  
 代码优化.md [代码优化.md](./AI/代码优化.md) <font color=green>已完成</font>  
 OpenClaw实现OPC.md [OpenClaw实现OPC.md](./AI/OpenClaw实现OPC.md) <font color=green>已完成</font>  
+IDE沙箱机制.md [IDE沙箱机制.md](./AI/IDE沙箱机制.md) <font color=green>已完成</font>  
