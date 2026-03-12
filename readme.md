@@ -207,3 +207,4 @@ Prompt和MCP.md [Prompt和MCP.md](./AI/Prompt和MCP.md) <font color=green>已完
 代码优化.md [代码优化.md](./AI/代码优化.md) <font color=green>已完成</font>  
 OpenClaw实现OPC.md [OpenClaw实现OPC.md](./AI/OpenClaw实现OPC.md) <font color=green>已完成</font>  
 IDE沙箱机制.md [IDE沙箱机制.md](./AI/IDE沙箱机制.md) <font color=green>已完成</font>  
+龙虾像素办公室.md [龙虾像素办公室.md](./AI/龙虾像素办公室.md) <font color=green>已完成</font>  
