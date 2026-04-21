@@ -81,7 +81,8 @@ function createScheduler(limit) {
     },
     resume() {
       if (!isPaused) return;
-      
+      isPaused = false;
+
       // 补满调度队列：runningCount < limit
       while (taskQueue.length && runningCount < limit) {
         runTask();
