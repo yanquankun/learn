@@ -192,6 +192,7 @@ LCP 标记原理 [LCP 标记原理.md](./稳定性建设/LCP标记原理.md) <fo
 带缓存的异步输入建议 [带缓存的异步输入建议.js](./场景题/带缓存的异步输入建议.js) <font color=green>已完成</font>  
 异步并发调度器 [异步并发调度器.js](./场景题/异步并发调度器.md) <font color=green>已完成</font>  
 并发任务调度器 [并发任务调度器.js](./场景题/并发任务调度器.md) <font color=green>已完成</font>  
+可暂停的并发任务调度器 [可暂停的并发任务调度器.js](./场景题/可暂停的并发任务调度器.js) <font color=green>已完成</font>  
 
 ### pinia解析
 
