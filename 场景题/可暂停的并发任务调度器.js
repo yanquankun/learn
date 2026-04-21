@@ -34,8 +34,8 @@
  * }}
  */
 function createScheduler(limit) {
-  if (typeof limit !== "number" || limit < 1) {
-    throw new Error("limit must be a number and greater than 0");
+  if (!Number.isInteger(limit) || limit < 1) {
+    throw new Error("limit must be a positive integer");
   }
 
   const taskQueue = [];
@@ -80,7 +80,8 @@ function createScheduler(limit) {
       isPaused = true;
     },
     resume() {
-      isPaused = false;
+      if (!isPaused) return;
+      
       // 补满调度队列：runningCount < limit
       while (taskQueue.length && runningCount < limit) {
         runTask();
