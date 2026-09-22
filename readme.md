@@ -213,3 +213,5 @@ IDE沙箱机制.md [IDE沙箱机制.md](./AI/IDE沙箱机制.md) <font color=gre
 龙虾像素办公室.md [龙虾像素办公室.md](./AI/龙虾像素办公室.md) <font color=green>已完成</font>  
 
 ### 算法冲刺100道
+
+算法冲刺100道 [01-两数之和.ts](./算法冲刺100道/哈希/01-两数之和.ts) <font color=green>已完成</font>  
