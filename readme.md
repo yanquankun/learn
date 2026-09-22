@@ -37,51 +37,79 @@ promise [promise.js](./源码实现/promise.js) <font color=green>已完成</fon
 
 ### 算法
 
-红绿灯 [红绿灯.js](./算法/红绿灯.js) <font color=green>已完成</font>  
-链表反转 [链表反转.js](./算法/链表反转.js) <font color=green>已完成</font>  
-二叉树遍历 [二叉树遍历.js](./算法/二叉树遍历.js) <font color=green>已完成</font>  
-广度优先遍历 [广度优先遍历.js](./算法/广度优先遍历.js) <font color=green>已完成</font>  
-深度优先遍历 [深度优先遍历.js](./算法/深度优先遍历.js) <font color=green>已完成</font>  
-快速排序 [快速排序.js](./算法/快速排序.js) <font color=green>已完成</font>  
-链表有环 [链表有环.js](./算法/链表有环.js) <font color=green>已完成</font>  
-字符的最短距离 [字符的最短距离.js](./算法/字符的最短距离.js) <font color=green>已完成</font>  
-二叉树逐层遍历 [二叉树逐层遍历.js](./算法/二叉树逐层遍历.js) <font color=green>未完成，解法存在问题</font>  
-回文字符串 [回文字符串.js](./算法/回文字符串.js) <font color=green>已完成</font>  
-是否是素数 [是否是素数.js](./算法/是否是素数.js) <font color=green>已完成</font>  
-获取 n 以内的所有素数 [获取 n 以内的所有素数.js](./算法/获取n以内的所有素数.js) <font color=green>已完成</font>  
-大数相加 [大数相加.js](./算法/大数相加.js) <font color=green>已完成</font>  
-字符串出现的不重复最长长度 [字符串出现的不重复最长长度.js](./算法/字符串出现的不重复最长长度.js) <font color=green>已完成</font>
-返回数组大的前 topK 项 [返回数组大的前 topK 项.js](./算法/返回数组大的前topK项.js) <font color=green>已完成</font>  
-链表合并[链表合并.js](./算法/链表合并.js) <font color=green>已完成</font>  
-链表合并[连续天数的最高销售额.js](./算法/连续天数的最高销售额.js) <font color=green>已完成</font>  
-链表合并[移动零.js](./算法/移动零.js) <font color=green>已完成</font>  
-链表合并[生成 N 对有效括号.js](./算法/生成N对有效括号.js) <font color=green>已完成</font>  
-三数之和[三数之和.js](./算法/三数之和.js) <font color=green>已完成</font>  
-Z 字形变换[Z 字形变换.ts](./算法/Z字形变换.ts) <font color=green>已完成</font>  
-字符串转换整数(atoi)[字符串转换整数(atoi).js](<./算法/字符串转换整数(atoi).js>) <font color=green>已完成</font>  
-盛最多水的容器[盛最多水的容器.js](./算法/盛最多水的容器.js) <font color=green>已完成</font>  
-整数转罗马数字[整数转罗马数字.js](./算法/整数转罗马数字.js) <font color=green>已完成</font>  
-最接近的三数之和[最接近的三数之和.js](./算法/最接近的三数之和.js) <font color=green>已完成</font>  
-电话号码的字母组合[电话号码的字母组合.js](./算法/电话号码的字母组合.js) <font color=green>已完成</font>  
-括号生成[括号生成.js](./算法/括号生成.js) <font color=green>已完成</font>  
-两数相加[两数相加.js](./算法/两数相加.js) <font color=green>已完成</font>  
-两两交换链表中的节点[两两交换链表中的节点.js](./算法/两两交换链表中的节点.js) <font color=green>已完成</font>  
-两数相除[两数相除.js](./算法/两数相除.js) <font color=green>已完成</font>  
-最大子数组和[最大子数组和.js](./算法/最大子数组和.js) <font color=green>已完成</font>  
-组合总和[组合总和.js](./算法/组合总和.js) <font color=green>已完成</font>  
-全排列[全排列.js](./算法/全排列.js) <font color=green>已完成</font>  
-搜索旋转排序数组[搜索旋转排序数组.js](./算法/搜索旋转排序数组.js) <font color=green>已完成</font>  
-字符串相乘[字符串相乘.js](./算法/字符串相乘.js) <font color=green>已完成</font>  
-含重复项全排列[含重复项全排列.js](./算法/含重复项全排列.js) <font color=green>已完成</font>  
-子集[子集.js](./算法/子集.js) <font color=green>已完成</font>  
-旋转 K 次链表[旋转 K 次链表.js](./算法/旋转K次链表.js) <font color=green>已完成</font>  
-链表两数相加[链表两数相加.js](./算法/链表两数相加.js) <font color=green>已完成</font>  
-跳跃游戏[跳跃游戏.js](./算法/跳跃游戏.js) <font color=green>已完成</font>  
-N数内K个数组合[N数内K个数组合.js](./算法/N数内K个数组合.js) <font color=green>已完成</font>  
-原地删除数组中重复项[原地删除数组中重复项.js](./算法/原地删除数组中重复项.js) <font color=green>已完成</font>  
-翻转区间链表[翻转区间链表.js](./算法/翻转区间链表.js) <font color=green>已完成</font>  
-可重复使用的数字组合[可重复使用的数字组合.js](./算法/翻转区间链表.js) <font color=green>已完成</font>  
-二叉树层序遍历[二叉树层序遍历.js](./算法/二叉树层序遍历.js) <font color=green>已完成</font>  
+各分类内按学习难度由浅到深编号，同类题目相邻排列；编号为学习顺序，不代表官方难度评级。
+
+#### 数组与双指针
+
+移动零 [01-移动零.js](./算法/数组与双指针/01-移动零.js) <font color=green>已完成</font>  
+原地删除数组中重复项 [02-原地删除数组中重复项.js](./算法/数组与双指针/02-原地删除数组中重复项.js) <font color=green>已完成</font>  
+盛最多水的容器 [03-盛最多水的容器.js](./算法/数组与双指针/03-盛最多水的容器.js) <font color=green>已完成</font>  
+最接近的三数之和 [04-最接近的三数之和.js](./算法/数组与双指针/04-最接近的三数之和.js) <font color=green>已完成</font>  
+三数之和 [05-三数之和.js](./算法/数组与双指针/05-三数之和.js) <font color=green>已完成</font>  
+
+#### 字符串与滑动窗口
+
+回文字符串 [01-回文字符串.js](./算法/字符串与滑动窗口/01-回文字符串.js) <font color=green>已完成</font>  
+字符的最短距离 [02-字符的最短距离.js](./算法/字符串与滑动窗口/02-字符的最短距离.js) <font color=green>已完成</font>  
+Z字形变换 [03-Z字形变换.ts](./算法/字符串与滑动窗口/03-Z字形变换.ts) <font color=green>已完成</font>  
+字符串出现的不重复最长长度 [04-字符串出现的不重复最长长度.js](./算法/字符串与滑动窗口/04-字符串出现的不重复最长长度.js) <font color=green>已完成</font>  
+字符串转换整数(atoi) [05-字符串转换整数(atoi).js](<./算法/字符串与滑动窗口/05-字符串转换整数(atoi).js>) <font color=green>已完成</font>  
+
+#### 数学与数值运算
+
+是否是素数 [01-是否是素数.js](./算法/数学与数值运算/01-是否是素数.js) <font color=green>已完成</font>  
+获取n以内的所有素数 [02-获取n以内的所有素数.js](./算法/数学与数值运算/02-获取n以内的所有素数.js) <font color=green>已完成</font>  
+大数相加 [03-大数相加.js](./算法/数学与数值运算/03-大数相加.js) <font color=green>已完成</font>  
+整数转罗马数字 [04-整数转罗马数字.js](./算法/数学与数值运算/04-整数转罗马数字.js) <font color=green>已完成</font>  
+字符串相乘 [05-字符串相乘.js](./算法/数学与数值运算/05-字符串相乘.js) <font color=green>已完成</font>  
+两数相除 [06-两数相除.js](./算法/数学与数值运算/06-两数相除.js) <font color=green>已完成</font>  
+
+#### 排序与二分查找
+
+快速排序 [01-快速排序.js](./算法/排序与二分查找/01-快速排序.js) <font color=green>已完成</font>  
+返回数组大的前topK项 [02-返回数组大的前topK项.js](./算法/排序与二分查找/02-返回数组大的前topK项.js) <font color=green>已完成</font>  
+搜索旋转排序数组 [03-搜索旋转排序数组.js](./算法/排序与二分查找/03-搜索旋转排序数组.js) <font color=green>已完成</font>  
+
+#### 链表
+
+链表反转 [01-链表反转.js](./算法/链表/01-链表反转.js) <font color=green>已完成</font>  
+链表合并 [02-链表合并.js](./算法/链表/02-链表合并.js) <font color=green>已完成</font>  
+链表有环 [03-链表有环.js](./算法/链表/03-链表有环.js) <font color=green>已完成</font>  
+两数相加 [04-两数相加.js](./算法/链表/04-两数相加.js) <font color=green>已完成</font>  
+两两交换链表中的节点 [05-两两交换链表中的节点.js](./算法/链表/05-两两交换链表中的节点.js) <font color=green>已完成</font>  
+旋转K次链表 [06-旋转K次链表.js](./算法/链表/06-旋转K次链表.js) <font color=green>已完成</font>  
+翻转区间链表 [07-翻转区间链表.js](./算法/链表/07-翻转区间链表.js) <font color=green>已完成</font>  
+链表两数相加 [08-链表两数相加.js](./算法/链表/08-链表两数相加.js) <font color=green>已完成</font>  
+
+#### 树与遍历
+
+深度优先遍历 [01-深度优先遍历.js](./算法/树与遍历/01-深度优先遍历.js) <font color=green>已完成</font>  
+广度优先遍历 [02-广度优先遍历.js](./算法/树与遍历/02-广度优先遍历.js) <font color=green>已完成</font>  
+二叉树遍历 [03-二叉树遍历.js](./算法/树与遍历/03-二叉树遍历.js) <font color=green>已完成</font>  
+二叉树层序遍历 [04-二叉树层序遍历.js](./算法/树与遍历/04-二叉树层序遍历.js) <font color=green>已完成</font>  
+二叉树逐层遍历 [05-二叉树逐层遍历.js](./算法/树与遍历/05-二叉树逐层遍历.js) <font color=green>未完成，解法存在问题</font>  
+
+#### 回溯与组合
+
+子集 [01-子集.js](./算法/回溯与组合/01-子集.js) <font color=green>已完成</font>  
+N数内K个数组合 [02-N数内K个数组合.js](./算法/回溯与组合/02-N数内K个数组合.js) <font color=green>已完成</font>  
+电话号码的字母组合 [03-电话号码的字母组合.js](./算法/回溯与组合/03-电话号码的字母组合.js) <font color=green>已完成</font>  
+全排列 [04-全排列.js](./算法/回溯与组合/04-全排列.js) <font color=green>已完成</font>  
+含重复项全排列 [05-含重复项全排列.js](./算法/回溯与组合/05-含重复项全排列.js) <font color=green>已完成</font>  
+组合总和 [06-组合总和.js](./算法/回溯与组合/06-组合总和.js) <font color=green>已完成</font>  
+生成N对有效括号 [07-生成N对有效括号.js](./算法/回溯与组合/07-生成N对有效括号.js) <font color=green>已完成</font>  
+括号生成 [08-括号生成.js](./算法/回溯与组合/08-括号生成.js) <font color=green>已完成</font>  
+
+#### 动态规划与贪心
+
+最大子数组和 [01-最大子数组和.js](./算法/动态规划与贪心/01-最大子数组和.js) <font color=green>已完成</font>  
+连续天数的最高销售额 [02-连续天数的最高销售额.js](./算法/动态规划与贪心/02-连续天数的最高销售额.js) <font color=green>已完成</font>  
+跳跃游戏 [03-跳跃游戏.js](./算法/动态规划与贪心/03-跳跃游戏.js) <font color=green>已完成</font>  
+可重复使用的数字组合 [04-可重复使用的数字组合.js](./算法/动态规划与贪心/04-可重复使用的数字组合.js) <font color=green>已完成</font>  
+
+#### 异步流程控制
+
+红绿灯 [01-红绿灯.js](./算法/异步流程控制/01-红绿灯.js) <font color=green>已完成</font>  
 
 ---
 
